@@ -7,7 +7,6 @@ class HelloWorld < Gosu::Window
     self.caption = "Hello World"
 
     @title = Gosu::Image.from_text(self, "Hello World", Gosu.default_font_name, 100)
-    update
   end
 
   def button_down(id)

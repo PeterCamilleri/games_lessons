@@ -7,7 +7,7 @@ class HelloWorld < Gosu::Window
     self.caption = "Hello World"
 
     @title = Gosu::Image.from_text(self, "Hello World", Gosu.default_font_name, 100)
-    update
+    #update
   end
 
   def button_down(id)
@@ -19,8 +19,8 @@ class HelloWorld < Gosu::Window
   end
 
   def update
-    view_dist = 600
-    theta = Time.now.to_f
+    view_dist = 3000
+    theta = Time.now.to_f/2
 
     center_x = self.width/2
     center_y = self.height/2
