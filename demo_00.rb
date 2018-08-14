@@ -23,7 +23,7 @@ class HelloWorld < Gosu::Window
     self.caption = "Hello World"
 
     #Create an image from the text "Hello World"
-    @title = Gosu::Image.from_text(self, "Hello World", Gosu.default_font_name, 100)
+    @title = Gosu::Image.from_text("Hello World", 100)
   end
 
   #This function closes the application if the Escape key is pressed.
