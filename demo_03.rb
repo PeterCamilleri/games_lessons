@@ -6,7 +6,7 @@ class HelloWorld < Gosu::Window
     super
     self.caption = "Hello World"
 
-    @title = Gosu::Image.from_text(self, "Hello World", Gosu.default_font_name, 100)
+    @title = Gosu::Image.from_text("Hello World", 100)
     #update
   end
 
