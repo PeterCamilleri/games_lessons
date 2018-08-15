@@ -1,12 +1,14 @@
 # Writing Games in Ruby with Gosu
 
 This package contains several simple demonstration programs for creating
-simple games and graphics in Ruby through the Gosu gem. Writing games is
-a great way to learn and improve programming skills while actually finding
-a use for all the math you learned in school.
+simple games and graphics in Ruby through the Gosu gem. What lessons can be
+learned from this? Well writing games is a great way to learn and improve
+programming skills while actually finding a use for all the math you learned
+in school.
 
 Please note: You'll now need Ruby 2.3 or later as Gosu has dropped its
-support for versions older than that.
+support for versions older than that. That is as far as I know. I am not 100%
+certain on this point.
 
 ## Usage
 
@@ -29,9 +31,20 @@ The following demo programs are available:
     demo_03.rb  -- Still another spinning Hello World
 
 
-## Video Game Videos
+## More Resources
 
-Here are some videos that sure inspired me!
+There are a lot of resources available for Gosu:
+
+The Gosu Homepage
+https://www.libgosu.org/index.html
+
+The Gosu Gem page
+https://rubygems.org/gems/gosu
+
+Gosu internal documentation
+https://www.rubydoc.info/github/gosu/gosu/master/Gosu
+
+And here are some videos that sure inspired me!
 
 LA Ruby Conf 2014 - Writing Games with Ruby by Mike Moore
 https://www.youtube.com/watch?v=jJhbpY70miE
