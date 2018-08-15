@@ -3,8 +3,7 @@
 This package contains several simple demonstration programs for creating
 simple games and graphics in Ruby through the Gosu gem. What lessons can be
 learned from this? Well writing games is a great way to learn and improve
-programming skills while actually finding a use for all the math you learned
-in school.
+programming skills while having some FUN!
 
 Please note: You'll now need Ruby 2.3 or later as Gosu has dropped its
 support for versions older than that. That is as far as I know. I am not 100%
