@@ -1,4 +1,5 @@
-#Demo Number 1 - Spinning Hello World.
+#Demo Number 2 - Spinning Hello World.
+
 require "gosu"
 
 class HelloWorld < Gosu::Window

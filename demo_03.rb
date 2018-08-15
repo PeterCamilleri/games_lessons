@@ -1,4 +1,5 @@
-#Demo Number 2b - Spinning Hello World with (mangled) perspective.
+#Demo Number 3 - Spinning Hello World with perspective.
+
 require "gosu"
 
 class HelloWorld < Gosu::Window

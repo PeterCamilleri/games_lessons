@@ -1,7 +1,6 @@
-# Encoding: UTF-8
+#Demo Number 4 - Display (Legal License Rubbish) Text.
 
 require 'gosu'
-
 
 class License < Gosu::Window
   WIDTH   = 800
