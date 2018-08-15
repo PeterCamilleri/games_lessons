@@ -5,7 +5,7 @@ require "gosu"
 class HelloWorld < Gosu::Window
   def initialize(width=800, height=600, fullscreen=false)
     super
-    self.caption = "Hello World"
+    self.caption = "Hello World - Press Esc to Exit."
 
     @title = Gosu::Image.from_text("Hello World", 100)
   end

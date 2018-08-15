@@ -21,7 +21,7 @@ class HelloWorld < Gosu::Window
     super
 
     #Now some non-default behavior: Set the window's caption!
-    self.caption = "Hello World"
+    self.caption = "Hello World - Press Esc to Exit."
 
     #Create an image from the text "Hello World"
     @title = Gosu::Image.from_text("Hello World", 100)
