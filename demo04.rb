@@ -3,7 +3,7 @@
 require 'gosu'
 
 
-class Welcome < Gosu::Window
+class License < Gosu::Window
   WIDTH   = 800
   HEIGHT  = 600
   PADDING = 20
@@ -28,4 +28,4 @@ class Welcome < Gosu::Window
 
 end
 
-Welcome.new.show
+License.new.show
