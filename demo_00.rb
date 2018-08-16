@@ -37,14 +37,10 @@ class HelloWorld < Gosu::Window
   #our "Hello World" will appear stationary on the screen. We will add
   #motion in later versions of the demo program.
   def update
-
-    #Some detailed stuff:
-
-    #The file Demo_00_origin.png, is a picture showing the relationship
-    #between the center of the screen and the drawing point of the image.
     #The screen center is half the screen width and height. The drawing
     #point is the screen center minus half the image with and height.
     #This is calculated by the following two lines of code.
+    #The file Demo_00_origin.png, is a picture showing these relationships
 
     @x = (self.width-@title.width)/2
     @y = (self.height-@title.height)/2
