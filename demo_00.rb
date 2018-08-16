@@ -27,12 +27,12 @@ class HelloWorld < Gosu::Window
     @title = Gosu::Image.from_text("Hello World", 100)
   end
 
-  #This function closes the application if the Escape key is pressed.
+  #This method closes the application if the Escape key is pressed.
   def button_down(id)
     close if id == Gosu::KbEscape
   end
 
-  #This function calculates where in the window the text 'Hello World'
+  #This method calculates where in the window the text 'Hello World'
   #is to appear. Notice that the value calculated never changes. Thus
   #our "Hello World" will appear stationary on the screen. We will add
   #motion in later versions of the demo program.
