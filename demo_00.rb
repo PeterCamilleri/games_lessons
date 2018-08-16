@@ -38,7 +38,7 @@ class HelloWorld < Gosu::Window
   #motion in later versions of the demo program.
   def update
     #The screen center is half the screen width and height. The drawing
-    #point is the screen center minus half the image with and height.
+    #point is the screen center minus half the image width and height.
     #This is calculated by the following two lines of code.
     #The file Demo_00_origin.png, is a picture showing these relationships
 
