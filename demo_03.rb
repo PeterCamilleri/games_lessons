@@ -8,7 +8,6 @@ class HelloWorld < Gosu::Window
     self.caption = "Hello World - Press Esc to Exit."
 
     @title = Gosu::Image.from_text("Hello World", 100)
-    #update
   end
 
   def button_down(id)
