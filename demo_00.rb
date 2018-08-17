@@ -1,6 +1,7 @@
 #Demo Number 0 - Hello World.
 
-#This is a tiny ruby program that displays Hello World.
+#This is a tiny ruby program that displays Hello World. For such a simple
+#program it has a lot of comments so that we can explain the code in detail.
 
 #This first line of code makes all the features and resources of the Gosu gem
 #available to our program.
@@ -41,7 +42,6 @@ class HelloWorld < Gosu::Window
     #point is the screen center minus half the image width and height.
     #This is calculated by the following two lines of code.
     #The file Demo_00_origin.png, is a picture showing these relationships
-
     @x = (self.width-@title.width)/2
     @y = (self.height-@title.height)/2
   end
