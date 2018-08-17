@@ -60,7 +60,7 @@ attending a meetup where I overheard:
 
 Person A) I using [Name Redacted] version 3.11.20 for my work.
 
-Person B) What? Thst is SO yesterday morning. You must update to version
+Person B) What? That is SO yesterday morning. You must update to version
 3.14.1 right away!
 
 To this end, when I make a remark that may easily be swept away by the sands
