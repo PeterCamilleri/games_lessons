@@ -34,25 +34,21 @@ The following demo programs are available:
 
 There are a lot of resources available for Gosu:
 
-The Gosu Homepage
-https://www.libgosu.org/index.html
+* [The Gosu Homepage](https://www.libgosu.org/index.html)
+* [The Gosu Gem page](https://rubygems.org/gems/gosu)
+* [Gosu Internal Documentation](https://www.rubydoc.info/github/gosu/gosu/master/Gosu)
 
-The Gosu Gem page
-https://rubygems.org/gems/gosu
+And here are some videos/blogs that sure inspired me!
 
-Gosu internal documentation
-https://www.rubydoc.info/github/gosu/gosu/master/Gosu
-
-And here are some videos that sure inspired me!
-
-LA Ruby Conf 2014 - Writing Games with Ruby by Mike Moore
-https://www.youtube.com/watch?v=jJhbpY70miE
-
-Ruby on Ales 2014 - Writing Games with Ruby
-https://www.youtube.com/watch?v=VawT9BQr3Wk
+* [RubyConf 2016: Attention Rubyists: You can write video games, by Cory Chamblin](https://confreaks.tv/videos/rubyconf2016-attention-rubyists-you-can-write-video-games)
+* [2015: An introduction to Ruby/Gosu, by Iván González](http://dreamingechoes.github.io/game/gosu/ruby/become-a-videogame-developer-master-with-gosu-and-ruby/)
+* [LA Ruby Conf 2014 - Writing Games with Ruby by Mike Moore](https://www.youtube.com/watch?v=jJhbpY70miE)
+* [Ruby on Ales 2014 - Writing Games with Ruby by Mike Moore](https://www.youtube.com/watch?v=VawT9BQr3Wk)
+* [Tutorial Series 2013: Conway’s Game of Life with Ruby/Gosu in vim, by Ofcan](https://www.youtube.com/watch?v=iLXO2FLPulI)
+* [Ruby Conf 2012: Game Development and Ruby, by Andrew Nordman](https://www.youtube.com/watch?v=H5_Kid3hpRs)
 
 Want more? Many more interesting videos may be found on YouTube by
-searching for: gosu ruby
+searching for: [gosu ruby](https://www.youtube.com/results?search_query=gosu+ruby)
 
 
 ## Contributing
@@ -62,3 +58,7 @@ searching for: gosu ruby
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+OR...
+
+* Make a suggestion by raising an issue. All ideas and comments are welcome.
