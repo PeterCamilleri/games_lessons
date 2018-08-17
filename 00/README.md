@@ -26,8 +26,12 @@ If you don't see a usable version of ruby or worse yet you see:
 You need to install Ruby on your machine. There is help for this available
 from multiple sources:
 
-* [RubyInstaller for Windows](https://rubyinstaller.org/)
-* [RailsInstaller](http://www.railsinstaller.org/en)
+* Under Windows you can use [RubyInstaller for Windows](https://rubyinstaller.org/) or
+  [RailsInstaller](http://www.railsinstaller.org/en)
+* On Linux/OS X, you can use the package management system of your
+  distribution or third-party tools
+  ([rbenv](https://github.com/rbenv/rbenv) or
+  [RVM](http://rvm.io/)).
 
 For myself, I use RailsInstaller, not that I care much about Rails, but mostly
 because it is a comprehensive installation of Ruby, Rails, the DevKit, and
