@@ -53,6 +53,19 @@ And here are some videos/blogs that sure inspired me!
 Want more? Many more interesting videos may be found on YouTube by
 searching for: [gosu ruby](https://www.youtube.com/results?search_query=gosu+ruby)
 
+## Time Sensitive Information
+
+Modern computer programming environments change at an alarming pace. I recall
+attending a meetup where I overheard:
+
+Person A) I using [Name Redacted] version 3.11.20 for my work.
+
+Person B) What? Thst is SO yesterday morning. You must update to version
+3.14.1 right away!
+
+To this end, when I make a remark that may easily be swept away by the sands
+of time, I tag on "---" and the date I made the observation --- Aug 17, 2018
+
 
 ## Contributing
 
