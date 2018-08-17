@@ -15,19 +15,22 @@ certain on this point.
 
 Then to run a demo you would use:
 
-    $ ruby demo_00.rb
+    $ ruby 00\demo_00.rb
 
 Enjoy the cool "Hello World"! Press Escape to exit when the thrill wears off.
 
 
-## What's Here
+## Contents
 
-The following demo programs are available:
+This turorial is set up in chapters with each chapter in its own sub-folder.
+Each chapter has its own README.md file that serves as a guide to the contents
+of that chapter. This is designed to make it easy to navigate the course using
+a combination of GitHub to view the text and running the programs locally.The
+following are included.
 
-    demo_00.rb  -- A simple Hello World
-    demo_01.rb  -- A spinning Hello World
-    demo_02.rb  -- Another spinning Hello World
-    demo_03.rb  -- Still another spinning Hello World
+* **Chapter 00** - The traditional "Hello World" with a few fun variations.
+
+More contents are under development at this time. Really!
 
 
 ## More Resources
