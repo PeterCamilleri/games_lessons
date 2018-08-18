@@ -51,3 +51,17 @@ step is an easy one:
 That should do it!
 
 ## Step Zero - Install this tutorial.
+
+This step can be accomplished by downloading the games_lessons repository zip
+file and expanding it into a folder easily reached by a Ruby enabled command
+line session.
+
+With any luck, you can now enter:
+
+    ruby 00/demo_00.rb
+
+or in Windows
+
+    ruby 00\demo_00.rb
+
+and see the first of the "Hello World" demo programs.
