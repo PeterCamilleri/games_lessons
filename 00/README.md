@@ -41,3 +41,13 @@ install current versions of Ruby.
 Item under development --- I am working on a RailsInstaller survival guide
 which will try to get the best of both worlds.
 
+## Step minus 1 Install the Gosu gem.
+
+After the scary business of getting the right version of Ruby installed, this
+step is an easy one:
+
+    gem install gosu
+
+That should do it!
+
+## Step Zero - Install this tutorial.
