@@ -1,13 +1,11 @@
-# Chapter 0 - Hello World
+# Chapter 0 - Getting setup with Ruby and Gosu.
 
-A silly tradition in the world of computer programming is to have as a first,
-simple example a program the displays the text "Hello World". This tutorial is
-not going to break with this tradition.
+Before we can run any programs in this tutorial, we need to have some
+prerequisites taken care of. If your system is already properly configured you
+can skip ahead to Chapter 1, but if you are not absolutely certain, it
+wouldn't hurt to review the following.
 
-However, before we can run any programs, we need to have some prerequisites
-taken care of.
-
-## Step minus 2 First we need Ruby.
+## Step 1 First we need Ruby.
 
 All the examples will need a Ruby language system installed correctly. From the
 command line you should be able to do the following:
@@ -41,7 +39,7 @@ install current versions of Ruby.
 Item under development --- I am working on a RailsInstaller survival guide
 which will try to get the best of both worlds.
 
-## Step minus 1 Install the Gosu gem.
+## Step 2 Install the Gosu gem.
 
 After the scary business of getting the right version of Ruby installed, this
 step is an easy one:
@@ -50,7 +48,7 @@ step is an easy one:
 
 That should do it!
 
-## Step Zero - Install this tutorial.
+## 3 - Install this tutorial.
 
 This step can be accomplished by downloading the games_lessons repository zip
 file and expanding it into a folder easily reached by a Ruby enabled command
@@ -65,3 +63,6 @@ or in Windows
     ruby 00\demo_00.rb
 
 and see the first of the "Hello World" demo programs.
+
+We will return to this first demo, but for now, you are ready for Chapter 1.
+s
