@@ -38,7 +38,7 @@ because it is a comprehensive installation of Ruby, Rails, the DevKit, and
 other useful utilities. However RubyInstaller is more flexible in letting you
 install current versions of Ruby.
 
-#### Step2A - A Brief RailsInstaller Survival Guide
+#### Step 2.1 - A Brief RailsInstaller Survival Guide
 
 The RailsInstaller generally creates two major trees of folders when it
 installs in a system. These are typically
