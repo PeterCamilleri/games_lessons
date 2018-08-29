@@ -14,7 +14,7 @@ done being amazed by the awesomeness of it "Hello" and the worldliness of its
 
 Now we crack into the code that makes this trivial program tick.
 
-In ancient times, I recall the Charles Petzold 1989 book:
+In ancient times, I recall the 1989 Charles Petzold book:
 [Programming the OS/2 Presentation Manager](https://www.amazon.ca/Programming-Presentation-Manager-Applications-Environment/dp/1556151705/ref=sr_1_29?ie=UTF8&qid=1535567521&sr=8-29&keywords=charles+petzold).
 In particular I recall the Hello Word program. If memory serves, it was a
 massive chunk of 'C' code running about six pages long. It was also convoluted,
