@@ -8,9 +8,12 @@ If you did'nt do so already in chapter 0, lets run the first demo program:
 
     ruby 01\demo_00.rb
 
-and see the first of the "Hello World" demo programs. Press escape when we are
-done being amazed by the awesomeness of it "Hello" and the worldliness of its
-"World"
+and see the first of the "Hello World" demo programs.
+
+![Demo 00](./images/Demo00.png)
+
+Press escape when we are done being amazed by the awesomeness of it "Hello" and
+the worldliness of its "World"
 
 Now we crack into the code that makes this trivial program tick.
 
@@ -36,3 +39,12 @@ end
 
 HelloWorld.new.show
 ```
+The line require "gosu" is the standard way to extend Ruby with the new
+features of the gosu gem. In object oriented programming, creating classes is
+the most common way to define new behaviors. Our HelloWorld class however
+inherits behaviors from the Gosu::Window class. This inheritance is a major
+way that Ruby avoids so much of the boilerplate code of older systems.
+
+The final line of code creates an instance of our HelloWorld class with new
+and sends the show method to that instance. This show method is just one of
+many methods we get to inherit from Gosu::Window with no effort on our part.
