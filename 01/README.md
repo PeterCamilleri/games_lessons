@@ -12,8 +12,8 @@ and see the first of the "Hello World" demo programs.
 
 ![Demo 00](./images/Demo00.png)
 
-Press escape when we are done being amazed by the awesomeness of it "Hello" and
-the worldliness of its "World"
+Press escape when we are done being amazed by the awesomeness of its "Hello"
+and the worldliness of its "World"
 
 ## High level overview:
 
@@ -89,4 +89,4 @@ WIP
 
 
 ## Notes:
-* Lawyers stuff. All trademarks are the property of their respective owners.
+* All trademarks are the property of their respective owners.
