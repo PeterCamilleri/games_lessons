@@ -89,4 +89,4 @@ WIP
 
 
 ## Notes:
-* Lawyers go to hell. All trademarks are the property of their respective owners.
+* Lawyers stuff. All trademarks are the property of their respective owners.
