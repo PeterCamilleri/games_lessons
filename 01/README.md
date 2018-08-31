@@ -50,9 +50,11 @@ many methods we get to inherit from Gosu::Window with no effort on our part.
 
 ## What's all this classy stuff anyway?
 
+WIP
 
 ## What does it do?
 
+WIP
 
 ## Extra Credits
 
@@ -64,4 +66,27 @@ In ancient times, I recall the 1989 Charles Petzold book:
 In particular I recall the Hello Word program. If memory serves, it was a
 massive chunk of 'C' code running about six pages long. It was also convoluted,
 difficult to understand, and full of cryptic Presentation Manager API calls.
-Yikes!
+I have memories of struggling to put together applications using those same
+programming tools and it was pure frustration. In case you think that this was
+kust an OS/2 thing, Windows 3.1 was much worse and Win32 started in Window 95
+did little to really help out the situation.
+
+So the question before us is simply this: **Why was it so bad?**
+
+Let's identify the key villains:
+
+#### The 'C' language:
+
+WIP
+
+#### That Optimized Code Guy:
+
+WIP
+
+#### The Evil Committee of Taking Over the World:
+
+WIP
+
+
+## Notes:
+* Lawyers go to hell. All trademarks are the property of their respective owners.
