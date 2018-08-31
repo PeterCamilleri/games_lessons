@@ -15,20 +15,18 @@ and see the first of the "Hello World" demo programs.
 Press escape when we are done being amazed by the awesomeness of it "Hello" and
 the worldliness of its "World"
 
-Now we crack into the code that makes this trivial program tick.
+## High level overview:
 
-In ancient times, I recall the 1989 Charles Petzold book:
-[Programming the OS/2 Presentation Manager](https://www.amazon.ca/Programming-Presentation-Manager-Applications-Environment/dp/1556151705/ref=sr_1_29?ie=UTF8&qid=1535567521&sr=8-29&keywords=charles+petzold).
-In particular I recall the Hello Word program. If memory serves, it was a
-massive chunk of 'C' code running about six pages long. It was also convoluted,
-difficult to understand, and full of cryptic Presentation Manager API calls.
-Yikes!
+Now we crack into the code that makes this trivial program tick. The Gosu
+version of Hello World is a lot longer than the Ruby CLI version. It's hard to
+beat:
 
-OK, enough horror stories of the bad old days. The Gosu version of Hello World
-is nowhere at all that bad, but in truth, it's not a one-liner either. While
-it is a trivial program, it does contain the essential parts of any Gosu
-application. Let's retire to our luxury jet plane and look at the code from
-an altitude of about 10,000 feet:
+```ruby
+puts "Hello World"
+```
+
+So, let's retire to our luxury jet plane and look at the code from an altitude
+of about 10,000 feet:
 
 ```ruby
 require "gosu"
@@ -39,6 +37,7 @@ end
 
 HelloWorld.new.show
 ```
+
 The line require "gosu" is the standard way to extend Ruby with the new
 features of the gosu gem. In object oriented programming, creating classes is
 the most common way to define new behaviors. Our HelloWorld class however
@@ -48,3 +47,21 @@ way that Ruby avoids so much of the boilerplate code of older systems.
 The final line of code creates an instance of our HelloWorld class with new
 and sends the show method to that instance. This show method is just one of
 many methods we get to inherit from Gosu::Window with no effort on our part.
+
+## What's all this classy stuff anyway?
+
+
+## What does it do?
+
+
+## Extra Credits
+
+This section is only of interest to historian types and those who'd rather not
+be doomed to repeating the dumb mistakes of the past.
+
+In ancient times, I recall the 1989 Charles Petzold book:
+[Programming the OS/2 Presentation Manager](https://www.amazon.ca/Programming-Presentation-Manager-Applications-Environment/dp/1556151705/ref=sr_1_29?ie=UTF8&qid=1535567521&sr=8-29&keywords=charles+petzold).
+In particular I recall the Hello Word program. If memory serves, it was a
+massive chunk of 'C' code running about six pages long. It was also convoluted,
+difficult to understand, and full of cryptic Presentation Manager API calls.
+Yikes!
