@@ -100,12 +100,14 @@ time not available for doing useful, application oriented work.
 
 In case anyone should think that this is a diatribe against 'C', it is not. I
 have used that language numerous times in many embedded systems projects where
-resource constraints required a lean and compact solution. 'C' was in its
-element. Using it in a GUI is akin to using scissors to mow the lawn. It can
-be made to work; It's just not a good idea.
+resource constraints required a lean and compact solution and the task at hand
+lent itself to a structured approach. 'C' was in its element. Using it in a GUI
+is akin to using scissors to mow the lawn. It can be made to work; It's just
+not a good idea.
 
 #### The Really Awful Hardware:
 
+WIP
 
 #### That Optimized Code Guy:
 
