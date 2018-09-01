@@ -71,9 +71,8 @@ programming tools and it was pure frustration. In case you think that this was
 kust an OS/2 thing, Windows 3.1 was much worse and Win32 started in Window 95
 did little to really help out the situation.
 
-So the question before us is simply this: **Why was it so bad?**
-
-Let's identify the key villains:
+So the question before us is simply this: **Why was it so bad?** Let's identify
+the key villains:
 
 #### The 'C' language:
 
