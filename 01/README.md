@@ -78,9 +78,9 @@ the key villains:
 
 Way back in 1989, the 'C' programming language was the undisputed king of the
 programming languages. While some primitive Luddites clung to the wretched
-assembly language, most recognized that high level languages, like 'C' promoted
-better results through improved code clarity, fewer code defects, and enhanced
-code portability. That is, except when it didn't.
+assembly language, most recognized that high level languages, like 'C',
+promoted better results through improved code clarity, fewer code defects, and
+enhanced code portability. That is, except when it didn't.
 
 Windowed graphical user interfaces (GUI) were the one of the original use cases for
 the entire concept of object oriented programming (OOP). On a basic level, a
