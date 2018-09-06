@@ -15,7 +15,7 @@ class HelloWorld < Gosu::Window
   end
 
   def update
-    @t = ((Time.now.to_f)/5.0).radians_to_gosu
+    @t = (Time.now.to_f/5.0).radians_to_gosu
     @x = self.width/2
     @y = self.height/2
   end
