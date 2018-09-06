@@ -50,11 +50,64 @@ many methods we get to inherit from Gosu::Window with no effort on our part.
 
 ## What's all this classy stuff anyway?
 
-WIP
+The HelloWorld class defines just four methods: initialize, button_down, update
+and draw. Let's take a look at each in turn:
 
-## What does it do?
+```ruby
+def initialize(width=800, height=600, fullscreen=false)
+  super
+  self.caption = "Hello World - Press Esc to Exit."
+  @title = Gosu::Image.from_text("Hello World", 100)
+end
 
-WIP
+```
+
+**initialize** - this method sets up our hello world window. Since this window
+inherits behavior from the Gosu::Window class, we send the message to the
+parent class with "super" keyword. This passes along all of the initialize
+parameters as well. The next line sets the caption of window. It's the text
+in the upper window bar. The final line creates an image object from the
+supplied text and text size.
+
+Also note that there are many ways this could have coded in Ruby. This is just
+one example.
+
+```ruby
+def button_down(id)
+  close if id == Gosu::KbEscape
+end
+
+```
+
+**button_down** - this methods responds to buttons being pressed. If the id of
+the button pressed is that of the escape key, the window is closed.
+
+
+```ruby
+def update
+  @x = (self.width-@title.width)/2
+  @y = (self.height-@title.height)/2
+end
+
+```
+**update** - this event is sent to the window so that it can update any data
+for the next frame of our game. In this simple case, we just calculate where
+on the screen our text image is going to be placed. This is shown
+[here](./images/demo_00_origin.png)
+
+```ruby
+def draw
+  @title.draw(@x, @y, 0)
+end
+```
+
+**draw** - this event is sent to the window so that it can actually draw stuff
+on the screen. Given the coordinates calculated in the update method, the
+simply send the draw message to the image object in the @title variable so that
+it can do the work of drawing on the screen for us.
+
+And that's it! Not a one-liner but not a 300 line monster either.
+
 
 ## Extra Credits
 
