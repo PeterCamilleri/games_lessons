@@ -8,6 +8,7 @@ class HelloWorld < Gosu::Window
     self.caption = "Hello World - Press Esc to Exit."
 
     @title = Gosu::Image.from_text("Hello World", 100)
+    @theta = 0.0
   end
 
   def button_down(id)
@@ -15,13 +16,13 @@ class HelloWorld < Gosu::Window
   end
 
   def update
-    @t = (Time.now.to_f/5.0).radians_to_gosu
+    @theta += 1
     @x = self.width/2
     @y = self.height/2
   end
 
   def draw
-    @title.draw_rot(@x, @y, 0, @t)
+    @title.draw_rot(@x, @y, 0, @theta)
   end
 end
 
