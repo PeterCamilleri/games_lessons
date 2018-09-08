@@ -4,6 +4,8 @@ A silly tradition in the world of computer programming is to have as a first,
 simple example a program the displays the text "Hello World". This tutorial is
 not going to break with this tradition.
 
+## Demo 0
+
 If you did'nt do so already in chapter 0, lets run the first demo program:
 
     ruby 01\demo_00.rb
@@ -15,7 +17,7 @@ and see the first of the "Hello World" demo programs.
 Press escape when we are done being amazed by the awesomeness of its "Hello"
 and the worldliness of its "World"
 
-## High level overview:
+#### High level overview:
 
 Now we crack into the code that makes this trivial program tick. The Gosu
 version of Hello World is a lot longer than the Ruby CLI version. It's hard to
@@ -48,7 +50,7 @@ The final line of code creates an instance of our HelloWorld class with new
 and sends the show method to that instance. This show method is just one of
 many methods we get to inherit from Gosu::Window with no effort on our part.
 
-## What's all this classy stuff anyway?
+#### What's in this class anyway?
 
 The HelloWorld class defines just four methods: initialize, button_down, update
 and draw. Let's take a look at each in turn:
@@ -108,11 +110,27 @@ it can do the work of drawing on the screen for us.
 
 And that's it! Not a one-liner but not a 300 line monster either.
 
+## Demo 1
+
+WIP
+
+## Demo 2
+
+WIP
+
+## Demo 3
+
+WIP
+
+## Demo 4
+
+WIP
+
 
 ## Extra Credits
 
 This section is only of interest to historian types and those who'd rather not
-be doomed to repeating the dumb mistakes of the past.
+be doomed to repeating the mistakes of the past.
 
 In ancient times, I recall the 1989 Charles Petzold book:
 [Programming the OS/2 Presentation Manager](https://www.amazon.ca/Programming-Presentation-Manager-Applications-Environment/dp/1556151705/ref=sr_1_29?ie=UTF8&qid=1535567521&sr=8-29&keywords=charles+petzold).
