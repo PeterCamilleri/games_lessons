@@ -158,8 +158,8 @@ end
 **update** - this method is charged with updating values for the next draw.
 The update adds one degree to the angle theta. You will also notice that the
 position @x and @y are different. This is because the draw_rot method uses the
-center of the image as its origin, unlike the draw method above that uses the
-top, left hand corner.
+center of the image as its origin, unlike the draw method of demo_00 that uses
+the top, left hand corner.
 
 
 
