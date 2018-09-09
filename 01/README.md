@@ -112,7 +112,69 @@ And that's it! Not a one-liner but not a 300 line monster either.
 
 ## Demo 1
 
-WIP
+I realize that the demo_00 program is **really** boring. Let's see if we can
+steal a trick from the politicians bag and put a new "spin" on things. If you
+fire up:
+
+    ruby 01\demo_01.rb
+
+you will see something like:
+
+![Demo 00](./images/Demo01.png)
+
+Now I know it's not spinning in the picture above, and I could have made a
+cute animated GIF image, but to see the real thing, just run the code!
+
+#### The new stuff:
+
+It should be no surprise that the new program is largely the same as the old
+one so we will focus on the new bits here:
+
+
+```ruby
+def initialize(width=800, height=600, fullscreen=false)
+  super
+  self.caption = "Hello World - Press Esc to Exit."
+
+  @title = Gosu::Image.from_text("Hello World", 100)
+  @theta = 0
+end
+```
+
+**initialize** - this method is changed only by the addition on a single line
+of code at the end of the method. Since we want to make our "Hello World"
+message spin around, we need to track the current angle of that image. Here we
+set that angle to an initial value of 0. The name theta is the Latin spelling
+of the Greek word, and is often used to connote an angle.
+
+
+```ruby
+def update
+  @theta += 1
+  @x = self.width/2
+  @y = self.height/2
+end
+
+**update** - this method is charged with updating values for the next draw.
+Here it is:
+
+```
+
+The update adds one degree to the angle theta. You will also notice that the
+position @x and @y are different. This is because the draw_rot method uses the
+center of the image as its origin, unlike the draw method above that uses the
+top, left hand corner.
+
+```ruby
+def draw
+  @title.draw_rot(@x, @y, 0, @theta)
+end
+```
+
+**draw** - as before, this method does that actual drawing. Here we use the
+draw_rot method so we can control the angle of the displayed image.
+
+
 
 ## Demo 2
 

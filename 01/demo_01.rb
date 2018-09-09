@@ -8,7 +8,7 @@ class HelloWorld < Gosu::Window
     self.caption = "Hello World - Press Esc to Exit."
 
     @title = Gosu::Image.from_text("Hello World", 100)
-    @theta = 0.0
+    @theta = 0
   end
 
   def button_down(id)
