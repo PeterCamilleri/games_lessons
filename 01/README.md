@@ -213,7 +213,9 @@ WIP
 
 ## Demo 4
 
-WIP
+
+    LICENSES =
+    A block of legal copy that your game is obliged to display somewhere.
 
 
 ## Extra Credits

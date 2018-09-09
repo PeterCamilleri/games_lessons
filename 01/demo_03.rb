@@ -19,7 +19,7 @@ class HelloWorld < Gosu::Window
   end
 
   def update
-    view_dist = 3000
+    view_dist = 1500
     theta = Time.now.to_f/2
 
     center_x = self.width/2
