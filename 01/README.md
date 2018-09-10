@@ -206,13 +206,9 @@ def draw
 end
 ```
 
-
 ## Demo 3
 
 WIP
-
-## Demo 4
-
 
     LICENSES =
     A block of legal copy that your game is obliged to display somewhere.
