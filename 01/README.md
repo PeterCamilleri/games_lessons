@@ -208,11 +208,26 @@ end
 
 ## Demo 3
 
-WIP
+You didn't possibly think that we'd get through this thing without the lawyers
+sticking their noses into things and messing up life for everybody, did you?
+Within the Gosu documentation is a entry for the license. The entry looks
+something like this:
 
     LICENSES =
-    A block of legal copy that your game is obliged to display somewhere.
+        A block of legal copy that your game is obliged to display somewhere.
 
+        :a_string
+
+So in this tutorial, demo_03 displays this text. Take a look:
+
+![Demo 03](./images/Demo03.png)
+
+This demo is useful beyond demonstrating how to satisfy legal requirements. It
+is also a good template for those cases where the program must display a great
+deal of text, for game help for example.
+
+Digging into this code is left as an exercise for the reader. Please see the
+file demo_03.rb to see more.
 
 ## Extra Credits
 
