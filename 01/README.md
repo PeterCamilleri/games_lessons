@@ -280,7 +280,41 @@ not a good idea.
 
 #### The Really Awful Hardware:
 
-WIP
+If memory serves, in the early 90s, I was involved in a project to create a
+sophisticate GUI based application for OS/2. The language was NOT 'C'. It was
+Smalltalk. Graphical User Interface were invented under that language by Xerox
+in the 80s. It was the ideal language for such work.
+
+So why was the development such an agonizing death march?
+
+It did NOT help that the language was called "Smalltalk". Explaining to
+grim-faced suits that you are embarking on a costly development process in
+"Smalltalk" is never going to be easy. I seriously think that the name was a
+factor in the failure of that language.
+
+Most likely, though, it was the hardware.
+
+The hardware! We were dealing sluggish Intel 386 CPUs, on motherboards that all
+maxed out at a pitiful 16Meg of memory, and dumb video cards that forced the
+CPU to do all the grunt work of computing each and every pixel drawn.
+
+The fact that memory manufacturers were colluding to limit the supply of memory
+devices and jack up prices did not help either.
+
+Like Ruby, Smalltalk is an interpreted, dynamic language. Unlike Ruby, it was
+stone age primitive. The virtual machine interpreter and memory management were
+all many times less stable and efficient than those in Ruby today.
+
+In short it was really annoyingly slow, paused a lot for garbage collection,
+and crashed often enough to make users of the application want to go back to
+the character mode, DOS based application we were trying to replace.
+
+The industry was in a state of transition. These machines where over-powered as
+MS-DOS machines. They were completely inadequate OS/2 (or Windows/NT) machines
+for anything but the most trivial tasks written in, yes, 'C'.
+
+If your lawnmower is a plastic childrens toy, the scissors may be the only way
+to cut the lawn.
 
 #### That Optimized Code Guy:
 
