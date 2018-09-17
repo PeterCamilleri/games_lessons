@@ -279,6 +279,10 @@ lent itself to a structured approach. 'C' was in its element. Using it in a GUI
 is akin to using scissors to mow the lawn. It can be made to work; It's just
 not a good idea.
 
+#### The 'C++' language:
+
+WIP
+
 #### The Really Awful Hardware:
 
 If memory serves, in the early 90s, I was involved in a project to create a
