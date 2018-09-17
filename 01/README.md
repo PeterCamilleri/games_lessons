@@ -285,7 +285,8 @@ sophisticate GUI based application for OS/2. The language was NOT 'C'. It was
 Smalltalk. Graphical User Interface were invented under that language by Xerox
 in the 80s. It was the ideal language for such work.
 
-So why was the development such an agonizing death march?
+So if the ugliness of 'C' was not a factor, why was the development such an
+agonizing death march?
 
 It did NOT help that the language was called "Smalltalk". Explaining to
 grim-faced suits that you are embarking on a costly development process in
@@ -296,10 +297,12 @@ Most likely, though, it was the hardware.
 
 The hardware! We were dealing sluggish Intel 386 CPUs, on motherboards that all
 maxed out at a pitiful 16Meg of memory, and dumb video cards that forced the
-CPU to do all the grunt work of computing each and every pixel drawn.
+CPU to do all the grunt work of computing each and every pixel drawn. To be
+fair, in the day, these were considered to be good machines, for those with
+finite budgets.
 
 The fact that memory manufacturers were colluding to limit the supply of memory
-devices and jack up prices did not help either.
+devices and jack up prices probably did not help either.
 
 Like Ruby, Smalltalk is an interpreted, dynamic language. Unlike Ruby, it was
 stone age primitive. The virtual machine interpreter and memory management were
@@ -313,14 +316,14 @@ The industry was in a state of transition. These machines where over-powered as
 MS-DOS machines. They were completely inadequate OS/2 (or Windows/NT) machines
 for anything but the most trivial tasks written in, yes, 'C'.
 
-If your lawnmower is a plastic childrens toy, the scissors may be the only way
+If your lawnmower is a plastic children's toy, the scissors may be the only way
 to cut the lawn.
 
-#### That Optimized Code Guy:
+#### The Evil Committee of Taking Over the World:
 
 WIP
 
-#### The Evil Committee of Taking Over the World:
+#### That Optimized Code Guy:
 
 WIP
 
