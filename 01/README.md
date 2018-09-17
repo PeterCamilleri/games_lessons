@@ -283,7 +283,8 @@ not a good idea.
 
 Around the time that 'C', and the structured programming paradigm in general,
 were running out of steam, a new programming language was gaining ascendancy.
-That language, the brainchild of Bjarne Stroustrup, was 'C++'.
+That language, the brainchild of
+[Bjarne Stroustrup](http://www.stroustrup.com/), was 'C++'.
 
 WIP
 
