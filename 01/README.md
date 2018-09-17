@@ -232,7 +232,8 @@ file demo_03.rb to see more.
 ## Extra Credits
 
 This section is only of interest to historian types and those who'd rather not
-be doomed to repeating the mistakes of the past.
+be doomed to repeating the mistakes of the past. Otherwise, this section can be
+seen as a platform for a rant as well as yelling at kids to get off my lawn.
 
 In ancient times, I recall the 1989 Charles Petzold book:
 [Programming the OS/2 Presentation Manager](https://www.amazon.ca/Programming-Presentation-Manager-Applications-Environment/dp/1556151705/ref=sr_1_29?ie=UTF8&qid=1535567521&sr=8-29&keywords=charles+petzold).
