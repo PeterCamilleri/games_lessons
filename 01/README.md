@@ -281,6 +281,10 @@ not a good idea.
 
 #### The 'C++' language:
 
+Around the time that 'C', and the structured programming paradigm in general,
+were running out of steam, a new programming language was gaining ascendancy.
+That language, the brainchild of Bjarne Stroustrup, was 'C++'.
+
 WIP
 
 #### The Really Awful Hardware:
