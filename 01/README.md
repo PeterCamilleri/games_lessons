@@ -284,7 +284,12 @@ not a good idea.
 Around the time that 'C', and the structured programming paradigm in general,
 were running out of steam, a new programming language was gaining ascendancy.
 That language, the brainchild of
-[Bjarne Stroustrup](http://www.stroustrup.com/), was 'C++'.
+[Bjarne Stroustrup](http://www.stroustrup.com/), was 'C++'. One of the guiding
+principles of 'C++' was that it be a compatible enhancement of 'C'. In fact,
+an early 'C++' compiler (called cfront I believe) actually compiled 'C++' code
+into 'C' code. This compatibility was a major advantage for 'C++' as it made
+the large amounts of 'C' code available as a starting point for any new
+developments.
 
 WIP
 
