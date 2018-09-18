@@ -242,8 +242,8 @@ massive chunk of 'C' code running about six pages long. It was also convoluted,
 difficult to understand, and full of cryptic Presentation Manager API calls.
 I have memories of struggling to put together applications using those same
 programming tools and it was pure frustration. In case you think that this was
-kust an OS/2 thing, Windows 3.1 was much worse and Win32 started in Window 95
-did little to really help out the situation.
+kust an OS/2 thing, Windows 3.1 was much worse and the Win32 API started in
+Windows 95 did little to really help out the situation.
 
 So the question before us is simply this: **Why was it so bad?** Let's identify
 the key villains:
@@ -275,9 +275,10 @@ time not available for doing useful, application oriented work.
 In case anyone should think that this is a diatribe against 'C', it is not. I
 have used that language numerous times in many embedded systems projects where
 resource constraints required a lean and compact solution and the task at hand
-lent itself to a structured approach. 'C' was in its element. Using it in a GUI
-is akin to using scissors to mow the lawn. It can be made to work; It's just
-not a good idea.
+lent itself to a structured approach. 'C' was in its element.
+
+Using 'C' in a GUI is akin to using scissors to mow the lawn. It can be made to
+work; It's just not a good idea.
 
 #### The 'C++' language:
 
@@ -291,7 +292,29 @@ into 'C' code. This compatibility was a major advantage for 'C++' as it made
 the large amounts of 'C' code available as a starting point for any new
 developments.
 
-WIP
+This feature was also a major problem as well. I recall hearing the following
+(sorry I cannot recall where or who) "C++ is pretty good. Too bad about all the
+C." 'C++' was also a much more restrictive object oriented language. For
+example class types were determined statically at compile time rather than at
+runtime. To get around these and other restrictions, complex facilities such
+as multiple inheritance and templates were added. Implementation by the early
+compilers of the day was incomplete, bloated, slow, and riddled with bugs.
+
+Another problem was caused by the fact that the object oriented features all
+were contained in constructs in the compiler and excluded from the running
+programs. This has been compared to a ghost town. Entities run as expected, but
+access to even the most basic details, like what class is this? or what is this
+message? are not available. This made it very difficult to connect the message
+passing system of 'C++' to the messages of the window manager of the operating
+system. Most often this resulted in a huge 'switch' statement, just like in
+plain old 'C'.
+
+Trying to get around these problems, many non-standard language extensions were
+proposed and implemented. These only added to the confusion and the fog of
+proprietary obstruction.
+
+For cutting the lawn, motorized scissors are not always better, and can be a
+great deal more dangerous.
 
 #### The Really Awful Hardware:
 
