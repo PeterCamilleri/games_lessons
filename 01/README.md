@@ -70,6 +70,10 @@ def initialize(width=800, height=600, fullscreen=false)
 end
 
 ```
+In real games, the initialize method is used to load image and sound files into
+memory. Loading files is not something you want to be doing during the flow of
+your game.
+
 Also note that there are many ways this could have coded in Ruby. This is just
 one example.
 
