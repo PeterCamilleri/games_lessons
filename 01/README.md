@@ -388,7 +388,13 @@ Then when it came time to use tools like C++ to create encapsulation libraries
 to provide an easier-to-use programming model, these were often made to provide
 only an imperfect rationalization of the programming task. This was so bad that
 the Microsoft Foundation Class library was said to encapsulate Windows in the
-same way a baby is encapsulated by a leaky diaper... Eww...
+same way a baby is encapsulated by a leaky diaper...
+
+Ewe...
+
+The confusion that was the result of all this greed based design would not
+begin to fade until open sourced software rose in importance and popularity
+spearheaded by systems such as Linux, and compilers like GCC.
 
 #### That Optimized Code Guy:
 
