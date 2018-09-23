@@ -363,7 +363,17 @@ to cut the lawn.
 
 #### The Evil Committee of Taking Over the World:
 
+Look, capitalism requires that corporations seek greater profits, not the
+greater good. This includes companies that market and sell operating systems
+and graphical user environments. In the early 90s, this included Apple, IBM,
+Microsoft, and Novell. Each wanted to maximize the value of their offerings
+over those of their competitors.
+
+That meant that there was an incentive to "lock-in" applications to their
+platform and to make portable code as difficult as possible.
+
 WIP
+
 
 #### That Optimized Code Guy:
 
