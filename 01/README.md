@@ -379,10 +379,15 @@ For starters, graphical user interfaces were designed to be as different and
 incompatible as possible. This often meant that they were far more complex
 and convoluted than necessary.
 
+Complexity &#8594; Pain.
+
 In addition, programming tools often did not correctly implement many
 programming language features. Then to get around the bugs that had been added,
-non-standard, incompatible extensions are added. At Microsoft this went as far
-as to be the policy [Embrace, extend, and extinguish](https://en.wikipedia.org/wiki/Embrace%2C_extend%2C_and_extinguish).
+non-standard, incompatible extensions are added. At Microsoft. for example,
+this went as far as to be the policy of
+[embrace, extend, and extinguish](https://en.wikipedia.org/wiki/Embrace%2C_extend%2C_and_extinguish).
+
+Incompatibility &#8594; Suffering.
 
 Then when it came time to use tools like C++ to create encapsulation libraries
 to provide an easier-to-use programming model, these were often made to provide
@@ -390,11 +395,13 @@ only an imperfect rationalization of the programming task. This was so bad that
 the Microsoft Foundation Class library was said to encapsulate Windows in the
 same way a baby is encapsulated by a leaky diaper...
 
-Ewe...
+Ewe. Just ewe.
 
 The confusion that was the result of all this greed based design would not
 begin to fade until open sourced software rose in importance and popularity
-spearheaded by systems such as Linux, and compilers like GCC.
+spearheaded by systems such as Linux, and compilers like GCC. While open
+source development is not a perfect cure all, its success is such that it has
+forever changed the software landscape.
 
 #### That Optimized Code Guy:
 
