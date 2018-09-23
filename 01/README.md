@@ -372,8 +372,23 @@ over those of their competitors.
 That meant that there was an incentive to "lock-in" applications to their
 platform and to make portable code as difficult as possible.
 
-WIP
+So how did this legally mandated greed make life miserable for application
+developers?
 
+For starters, graphical user interfaces were designed to be as different and
+incompatible as possible. This often meant that they were far more complex
+and convoluted than necessary.
+
+In addition, programming tools often did not correctly implement many
+programming language features. Then to get around the bugs that had been added,
+non-standard, incompatible extensions are added. At Microsoft this went as far
+as to be the policy [Embrace, extend, and extinguish](https://en.wikipedia.org/wiki/Embrace%2C_extend%2C_and_extinguish).
+
+Then when it came time to use tools like C++ to create encapsulation libraries
+to provide an easier-to-use programming model, these were often made to provide
+only an imperfect rationalization of the programming task. This was so bad that
+the Microsoft Foundation Class library was said to encapsulate Windows in the
+same way a baby is encapsulated by a leaky diaper... Eww...
 
 #### That Optimized Code Guy:
 
