@@ -78,4 +78,6 @@ of time, I tag on "---" and the date I made the observation --- Aug 17, 2018
 
 OR...
 
-* Make a suggestion by raising an issue. All ideas and comments are welcome.
+* Make a suggestion by raising an
+ [issue](https://github.com/PeterCamilleri/games_lessons/issues)
+. All ideas and comments are welcome.
