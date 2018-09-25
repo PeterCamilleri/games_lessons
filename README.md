@@ -81,3 +81,14 @@ OR...
 * Make a suggestion by raising an
  [issue](https://github.com/PeterCamilleri/games_lessons/issues)
 . All ideas and comments are welcome.
+
+## License
+
+The project is available as open source under the terms of the
+[MIT License](./LICENSE.txt).
+
+## Code of Conduct
+
+Everyone interacting in the Games Lessons project’s codebases, issue trackers,
+chat rooms and mailing lists is expected to follow the
+[code of conduct](./CODE_OF_CONDUCT.md).
