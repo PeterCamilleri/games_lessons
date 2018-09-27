@@ -57,12 +57,11 @@ searching for: [gosu ruby](https://www.youtube.com/results?search_query=gosu+rub
 ## Time Sensitive Information
 
 Modern computer programming environments change at an alarming pace. I recall
-attending a meetup where I overheard:
+attending a meetup where they made a demonstration of running a two year old
+web site. Everyone was astonished that it actually worked! They could not
+conceive that code as **ancient** as two years old could still run at all!
 
-Person A) I using [Name Redacted] version 3.11.20 for my work.
-
-Person B) What? That is SO yesterday morning. You must update to version
-3.14.1 right away!
+Or in other (Latin) words: "Sic transit gloria mundi."
 
 To this end, when I make a remark that may easily be swept away by the sands
 of time, I tag on "---" and the date I made the observation --- Aug 17, 2018
