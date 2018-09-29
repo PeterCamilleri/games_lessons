@@ -395,7 +395,7 @@ only an imperfect rationalization of the programming task. This was so bad that
 the Microsoft Foundation Class library was said to encapsulate Windows in the
 same way a baby is encapsulated by a leaky diaper...
 
-Ewe. Just ewe.
+Ewe &#8594; Just ewe.
 
 The confusion that was the result of all this greed based design would not
 begin to fade until open sourced software rose in importance and popularity
