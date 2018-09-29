@@ -405,8 +405,34 @@ forever changed the software landscape.
 
 #### That Optimized Code Guy:
 
-WIP
+In almost every project I have worked on where I lacked full design authority,
+I've run into one of the worst problems of all. That guy who insists on
+optimizing the code _right away_. Invariably, when forced to deal with lower
+level languages than are desired, it is necessary to build in a level of
+abstraction in the code to allow for spec changes.
 
+This is anathema to optimized-code-guy. Any and all deviations from the minimum
+code path must be removed by them. This is fine until the specs change and all
+the rigidly cross-linked code must be ripped up, rewired, and debugged, and
+debugged, and debugged. Finally a patchwork of kludges, the code again works.
+
+And the customer adds "just these seven more changes please. ASAP please. The
+process repeats and repeats and eventually the code is shredded so badly that
+it needs to be reworked or thrown out and rewritten.
+
+By this time, optimized code guy has moved on to wreck another project.
+
+When should code be optimized then? Realistically, if the code works well
+enough and optimization would take away abstraction and agility, the answer is
+NEVER.
+
+The exception would be the case where the performance is not adequate. Then the
+code needs not optimization, it needs to be improved, usually by reworking
+algorithms. Low level code tweaking is almost never enough to fix a performance
+issues.
+
+You can mow the lawn with a flame thrower, just don't expect good long term
+results.
 
 ## Notes:
 * All trademarks are the property of their respective owners.
