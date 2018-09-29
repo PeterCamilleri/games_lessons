@@ -405,8 +405,11 @@ forever changed the software landscape.
 
 #### That Optimized Code Guy:
 
-In almost every project I have worked on where I lacked full design authority,
-I've run into one of the worst problems of all. That guy who insists on
+This point while not totally specific to the creation of graphical user
+interfaces is strongly associated with it and the low level tools we used to
+use to create them.
+
+In almost every project I have worked on, I've run into that guy who insists on
 optimizing the code _right away_. Invariably, when forced to deal with lower
 level languages than are desired, it is necessary to build in a level of
 abstraction in the code to allow for spec changes.
@@ -416,18 +419,23 @@ code path must be removed by them. This is fine until the specs change and all
 the rigidly cross-linked code must be ripped up, rewired, and debugged, and
 debugged, and debugged. Finally a patchwork of kludges, the code again works.
 
-And the customer adds "just these seven more changes please. ASAP please. The
-process repeats and repeats and eventually the code is shredded so badly that
-it needs to be reworked or thrown out and rewritten.
+Connecting back to our first paragraph in this topic, nowhere do users make
+more change requests than in the user interface. This is the part of the
+application that the users must interact with on a constant basis. It is the
+greatest point of pain for both users and programmers.
+
+And then the customer adds "just these seven more changes please. ASAP please.
+The process repeats and repeats and eventually the code is shredded so badly
+that it needs to be reworked or thrown out and rewritten.
 
 By this time, optimized code guy has moved on to wreck another project.
 
 When should code be optimized then? Realistically, if the code works well
 enough and optimization would take away abstraction and agility, the answer is
-NEVER.
+never. Seriously NEVER.
 
 The exception would be the case where the performance is not adequate. Then the
-code needs not optimization, it needs to be improved, usually by reworking
+code does not need optimization, it needs to be improved, usually by reworking
 algorithms. Low level code tweaking is almost never enough to fix a performance
 issues.
 
