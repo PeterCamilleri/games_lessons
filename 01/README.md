@@ -55,12 +55,12 @@ many methods we get to inherit from Gosu::Window with no effort on our part.
 The HelloWorld class defines just four methods: initialize, button_down, update
 and draw. Let's take a look at each in turn:
 
-**initialize** - this method sets up our hello world window. Since this window
-inherits behavior from the Gosu::Window class, we send the message to the
-parent class with "super" keyword. This passes along all of the initialize
-parameters as well. The next line sets the caption of window. It's the text
-in the upper window bar. The final line creates an image object from the
-supplied text and text size.
+**HelloWorld#initialize** - this method sets up our hello world window. Since
+this window inherits behavior from the Gosu::Window class, we send the message
+to the parent class with "super" keyword. This passes along all of the
+initialize parameters as well. The next line sets the caption of window. It's
+the text in the upper window bar. The final line creates an image object from
+the supplied text and text size.
 
 ```ruby
 def initialize(width=800, height=600, fullscreen=false)
@@ -77,8 +77,8 @@ your game.
 Also note that there are many ways this could have coded in Ruby. This is just
 one example.
 
-**button_down** - this methods responds to buttons being pressed. If the id of
-the button pressed is that of the escape key, the window is closed.
+**HelloWorld#button_down** - this methods responds to buttons being pressed. If
+the id of the button pressed is that of the escape key, the window is closed.
 ```ruby
 def button_down(id)
   close if id == Gosu::KbEscape
@@ -86,9 +86,9 @@ end
 
 ```
 
-**update** - this event is sent to the window so that it can update any data
-for the next frame of our game. In this simple case, we just calculate where
-on the screen our text image is going to be placed.
+**HelloWorld#update** - this event is sent to the window so that it can update
+any data for the next frame of our game. In this simple case, we just calculate
+where on the screen our text image is going to be placed.
 ```ruby
 def update
   @x = (self.width-@title.width)/2
@@ -99,10 +99,10 @@ end
 A picture of how the image origin works is shown
 [here](./images/demo_00_origin.png)
 
-**draw** - this event is sent to the window so that it can actually draw stuff
-on the screen. Given the coordinates calculated in the update method, the
-simply send the draw message to the image object in the @title variable so that
-it can do the work of drawing on the screen for us.
+**HelloWorld#draw** - this event is sent to the window so that it can actually
+draw stuff on the screen. Given the coordinates calculated in the update
+method, the simply send the draw message to the image object in the @title
+variable so that it can do the work of drawing on the screen for us.
 ```ruby
 def draw
   @title.draw(@x, @y, 0)
@@ -131,11 +131,11 @@ cute animated GIF image, but to see the real thing, just run the code!
 It should be no surprise that the new program is largely the same as the old
 one so we will focus on the new bits here:
 
-**initialize** - this method is changed only by the addition on a single line
-of code at the end of the method. Since we want to make our "Hello World"
-message spin around, we need to track the current angle of that image. Here we
-set that angle to an initial value of 0. The name theta is the Latin spelling
-of the Greek word, and is often used to connote an angle.
+**HelloWorld#initialize** - this method is changed only by the addition on a
+single line of code at the end of the method. Since we want to make our
+"Hello World" message spin around, we need to track the current angle of that
+image. Here we set that angle to an initial value of 0. The name theta is the
+Latin spelling of the Greek word, and is often used to connote an angle.
 ```ruby
 def initialize(width=800, height=600, fullscreen=false)
   super
@@ -146,11 +146,11 @@ def initialize(width=800, height=600, fullscreen=false)
 end
 ```
 
-**update** - this method is charged with updating values for the next draw.
-The update adds one degree to the angle theta. You will also notice that the
-position @x and @y are different. This is because the draw_rot method uses the
-center of the image as its origin, unlike the draw method of demo_00 that uses
-the top, left hand corner.
+**HelloWorld#update** - this method is charged with updating values for the
+next draw. The update adds one degree to the angle theta. You will also notice
+that the position @x and @y are different. This is because the draw_rot method
+uses the center of the image as its origin, unlike the draw method of demo_00
+that uses the top, left hand corner.
 ```ruby
 def update
   @theta += 1
@@ -159,8 +159,8 @@ def update
 end
 ```
 
-**draw** - as before, this method does that actual drawing. Here we use the
-draw_rot method so we can control the angle of the displayed image.
+**HelloWorld#draw** - as before, this method does that actual drawing. Here we
+use the draw_rot method so we can control the angle of the displayed image.
 ```ruby
 def draw
   @title.draw_rot(@x, @y, 0, @theta)
@@ -183,10 +183,10 @@ run the demo for yourself.
 
 #### What's new here?
 
-**update** - Added to this method is code to compute a scaling factor that
-"undulates". The cos (or cosine) math function has a perfect undulation for our
-needs. To prevent the origin from shifting as our message rotates, the width of
-the image is scaled too.
+**HelloWorld#update** - Added to this method is code to compute a scaling
+factor that "undulates". The cos (or cosine) math function has a perfect
+undulation for our needs. To prevent the origin from shifting as our message
+rotates, the width of the image is scaled too.
 ```ruby
 def update
   @scale_x = Math.cos(@theta/60.0)
@@ -200,10 +200,11 @@ expects units of angle called "radians". I know that the degrees tick through
 about 60 degrees per second and I want a rate of about one radian per second,
 so the angle in degrees is divided by 60.0 to give one radian per second.
 
-**draw** - finally we draw our images using the previously omitted scale_x
-paramater. If this were to be omitted, a factor of 1 would bw used. This would
-result in no scaling. In this code, the width is scaled to the wavy undulation
-of the cosine function.
+**HelloWorld#draw** - finally we draw our images using the previously omitted
+scale_x paramater. If this were to be omitted, a factor of 1 would be used.
+This would result in no scaling. In this code, the width is scaled to the wavy
+undulation of the cosine function. This generates the illusion that the image
+is spinning.
 ```ruby
 def draw
   @title.draw(@x, @y, 0, @scale_x)
@@ -281,8 +282,8 @@ have used that language numerous times in many embedded systems projects where
 resource constraints required a lean and compact solution and the task at hand
 lent itself to a structured approach. 'C' was in its element.
 
-Using 'C' in a GUI is akin to using scissors to mow the lawn. It can be made to
-work; It's just not a good idea.
+Summary: Using 'C' in a GUI is akin to using scissors to mow the lawn. It can
+be made to work; It's just not a good idea.
 
 #### The 'C++' language:
 
@@ -317,8 +318,8 @@ Trying to get around these problems, many non-standard language extensions were
 proposed and implemented. These only added to the confusion and the fog of
 proprietary obstruction.
 
-For cutting the lawn, motorized scissors are not always better, and can be a
-great deal more dangerous.
+Summary: For cutting the lawn, motorized scissors are not always better, and
+can be a great deal more dangerous.
 
 #### The Really Awful Hardware:
 
@@ -358,8 +359,8 @@ The industry was in a state of transition. These machines where over-powered as
 MS-DOS machines. They were completely inadequate OS/2 (or Windows/NT) machines
 for anything but the most trivial tasks written in, yes, 'C'.
 
-If your lawnmower is a plastic children's toy, the scissors may be the only way
-to cut the lawn.
+Summary: If your lawnmower is a plastic children's toy, the scissors may be the
+only way to cut the lawn.
 
 #### The Evil Committee of Taking Over the World:
 
@@ -379,7 +380,7 @@ For starters, graphical user interfaces were designed to be as different and
 incompatible as possible. This often meant that they were far more complex
 and convoluted than necessary.
 
-Complexity &#8594; Pain.
+Yoda Summary: Complexity &#8594; Pain.
 
 In addition, programming tools often did not correctly implement many
 programming language features. Then to get around the bugs that had been added,
@@ -387,7 +388,7 @@ non-standard, incompatible extensions are added. At Microsoft. for example,
 this went as far as to be the policy of
 [embrace, extend, and extinguish](https://en.wikipedia.org/wiki/Embrace%2C_extend%2C_and_extinguish).
 
-Incompatibility &#8594; Suffering.
+Yoda Summary: Incompatibility &#8594; Suffering.
 
 Then when it came time to use tools like C++ to create encapsulation libraries
 to provide an easier-to-use programming model, these were often made to provide
@@ -395,7 +396,7 @@ only an imperfect rationalization of the programming task. This was so bad that
 the Microsoft Foundation Class library was said to encapsulate Windows in the
 same way a baby is encapsulated by a leaky diaper...
 
-Ewe &#8594; Just ewe.
+Yoda Summary: Ewe &#8594; Just ewe.
 
 The confusion that was the result of all this greed based design would not
 begin to fade until open sourced software rose in importance and popularity
@@ -439,8 +440,8 @@ code does not need optimization, it needs to be improved, usually by reworking
 algorithms. Low level code tweaking is almost never enough to fix a performance
 issues.
 
-You can mow the lawn with a flame thrower, just don't expect good long term
-results.
+Summary: You can mow the lawn with a flame thrower, just don't expect good long
+term results.
 
 ## Notes:
 * All trademarks are the property of their respective owners.
