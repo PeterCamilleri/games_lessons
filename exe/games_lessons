@@ -3,6 +3,6 @@
 # Standalone execution of the games_lessons environment.
 #
 
-require 'games_lessons'
+require_relative '../lib/games_lessons'
 
-GamesLessons::main
+GamesLessons::main(ARGV)
