@@ -22,4 +22,3 @@ task :vers do |t|
   puts
   puts "games_lessons version = #{GamesLessons::VERSION}"
 end
-

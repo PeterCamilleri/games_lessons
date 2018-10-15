@@ -5,4 +5,4 @@
 
 require_relative '../lib/games_lessons'
 
-GamesLessons::main(ARGV)
+GamesLessons.new.main(ARGV)
