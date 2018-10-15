@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+#
+# Standalone execution of the games_lessons environment.
+#
+
+require 'games_lessons'
+
+GamesLessons::main
