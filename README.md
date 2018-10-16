@@ -31,6 +31,8 @@ following are included.
 * **Chapter 00** - Getting setup with Ruby and Gosu.
 * **Chapter 01** - The traditional "Hello World" with a few fun variations.
 
+* **Appendix A** - A small utility to observe the mapping of inputs to Gosu ids.
+
 More contents are under development at this time. Really!
 
 
