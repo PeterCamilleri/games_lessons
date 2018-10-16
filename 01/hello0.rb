@@ -1,4 +1,4 @@
-#Demo Number 0 - Hello World.
+# Hello World #0
 
 #This is a tiny ruby program that displays Hello World. For such a simple
 #program it has a lot of comments so that we can explain the code in detail.
@@ -36,12 +36,12 @@ class HelloWorld < Gosu::Window
   #This method calculates where in the window the text 'Hello World'
   #is to appear. Notice that the value calculated never changes. Thus
   #our "Hello World" will appear stationary on the screen. We will add
-  #motion in later versions of the demo program.
+  #motion in later versions of the program.
   def update
     #The screen center is half the screen width and height. The drawing
     #point is the screen center minus half the image width and height.
     #This is calculated by the following two lines of code.
-    #The file Demo_00_origin.png, is a picture showing these relationships
+    #The file hello0_origin.png, is a picture showing these relationships
     @x = (self.width-@title.width)/2
     @y = (self.height-@title.height)/2
   end

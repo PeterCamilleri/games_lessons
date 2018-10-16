@@ -99,7 +99,7 @@ end
 
 ```
 A picture of how the image origin works is shown
-[here](./images/demo_00_origin.png)
+[here](./images/hello0_origin.png)
 
 **HelloWorld#draw** - this event is sent to the window so that it can actually
 draw stuff on the screen. Given the coordinates calculated in the update
