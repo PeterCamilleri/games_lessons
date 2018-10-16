@@ -1,4 +1,4 @@
-#Demo Number 1 - Spinning Hello World like a windmill.
+# Spinning Hello World like a windmill.
 
 require "gosu"
 
