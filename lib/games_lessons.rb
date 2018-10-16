@@ -27,4 +27,7 @@ class GamesLessons
 
 end
 
-GamesLessons.new.main(ARGV)
+if __FILE__ == $0
+  puts "Game Lessons, Args = [#{ARGV.join(",")}]"
+  GamesLessons.new.main(ARGV)
+end
