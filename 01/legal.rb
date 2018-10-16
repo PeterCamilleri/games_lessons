@@ -1,4 +1,4 @@
-#Demo Number 4 - Display (Legal License Rubbish) Text.
+# Display (Legal License Rubbish) Text.
 
 require 'gosu'
 
