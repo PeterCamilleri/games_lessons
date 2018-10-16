@@ -11,6 +11,8 @@ certain on this point.
 
 ## Usage
 
+(Coming soon --- Oct 16, 2018)
+
     $ gem install gosu
 
 Then to run a demo you would use:
@@ -35,6 +37,29 @@ following are included.
 
 More contents are under development at this time. Really!
 
+## Running the Demo Programs
+
+This tutorial contains a number of demonstration and utility programs. There
+are two ways that these programs can be executed.
+
+---
+
+(**1**) From the games_lessons folder, in a command line session with access to Ruby
+(please see Chapter 00 more on that) enter the following:
+
+    ruby A\mapper.rb
+
+Naturally substituting the path and name of the program you wish to run.
+
+---
+
+(**2**) Enter the following from any command line session with access to Ruby:
+
+    games_lessons mapper
+
+Naturally substituting the name of the program you wish to run. (Coming soon --- Oct 16, 2018)
+
+---
 
 ## More Resources
 
