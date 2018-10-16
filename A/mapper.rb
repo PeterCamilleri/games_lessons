@@ -6,8 +6,9 @@ class Mapper < Gosu::Window
 
   def initialize(width=800, height=600, fullscreen=false)
     super
-    self.caption = "A Gosu Input Mapper."
+    self.caption = "A Gosu Input Mapper. Press Escape 3 times to exit."
     @buffer = ["Press a key", ""]
+    @count  = 0
 
     @mapper = { Gosu::KB_0              =>"Gosu::KB_0",
                 Gosu::KB_1              =>"Gosu::KB_1",
@@ -117,6 +118,12 @@ class Mapper < Gosu::Window
 
   def button_down(id)
     @buffer[0] = "button_down: #{id.inspect} #{@mapper[id]}"
+
+    if id == Gosu::KB_ESCAPE
+      close if (@count += 1) == 3
+    else
+      @count = 0
+    end
   end
 
   def button_up(id)

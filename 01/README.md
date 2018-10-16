@@ -4,15 +4,17 @@ A silly tradition in the world of computer programming is to have as a first,
 simple example a program the displays the text "Hello World". This tutorial is
 not going to break with this tradition.
 
-## Demo 0
+## Hello 0
 
 If you did'nt do so already in chapter 0, lets run the first demo program:
 
-    ruby 01\demo_00.rb
+    ruby 01\hello0.rb
+    or
+    games_lessons hello0
 
 and see the first of the "Hello World" demo programs.
 
-![Demo 00](./images/Demo00.png)
+![hello0](./images/Demo00.png)
 
 Press escape when we are done being amazed by the awesomeness of its "Hello"
 and the worldliness of its "World"
@@ -111,17 +113,19 @@ end
 
 And that's it! Not a one-liner but not a 300 line monster either.
 
-## Demo 1
+## Hello 1
 
-I realize that the demo_00 program is **really** boring. Let's see if we can
+I realize that the hello0 program is **really** boring. Let's see if we can
 steal a trick from the politicians bag and put a new "spin" on things. If you
 fire up:
 
-    ruby 01\demo_01.rb
+    ruby 01\hello1.rb
+    or
+    games_lessons hello1
 
 you will see something like:
 
-![Demo 01](./images/Demo01.png)
+![hello1](./images/Demo01.png)
 
 Now I know it's not spinning in the picture above, and I could have made a
 cute animated GIF image, but to see the real thing, just run the code!
@@ -149,7 +153,7 @@ end
 **HelloWorld#update** - this method is charged with updating values for the
 next draw. The update adds one degree to the angle theta. You will also notice
 that the position @x and @y are different. This is because the draw_rot method
-uses the center of the image as its origin, unlike the draw method of demo_00
+uses the center of the image as its origin, unlike the draw method of hello0
 that uses the top, left hand corner.
 ```ruby
 def update
@@ -167,16 +171,18 @@ def draw
 end
 ```
 
-## Demo 2
+## Hello 2
 
 What's that I hear? It's not spinning the right way? It should spin on another
-axis, you say? Oh I see. Let's try out demo_02 then:
+axis, you say? Oh I see. Let's try out hello2 then:
 
-    ruby 01\demo_02.rb
+    ruby 01\hello2.rb
+    or
+    games_lessons hello2
 
 you will see something like:
 
-![Demo 02](./images/Demo02.png)
+![hello2](./images/Demo02.png)
 
 Again, this is a snapshot, to see the actual results, full of amazing spinning,
 run the demo for yourself.
@@ -211,7 +217,7 @@ def draw
 end
 ```
 
-## Demo 3
+## Legal
 
 You didn't possibly think that we'd get through this thing without the lawyers
 sticking their noses into things and messing up life for everybody, did you?
@@ -223,16 +229,16 @@ something like this:
 
         :a_string
 
-So in this tutorial, demo_03 displays this text. Take a look:
+So in this tutorial, legal displays this text. Take a look:
 
-![Demo 03](./images/Demo03.png)
+![legal](./images/Demo03.png)
 
 This demo is useful beyond demonstrating how to satisfy legal requirements. It
 is also a good template for those cases where the program must display a great
 deal of text, for game help for example.
 
 Digging into this code is left as an exercise for the reader. Please see the
-file demo_03.rb to see more.
+file legal.rb to see more.
 
 ## Extra Credits
 
