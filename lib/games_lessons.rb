@@ -8,7 +8,7 @@ class GamesLessons
   def initialize
     @prog_list = { }
     base_path = File.dirname(File.absolute_path(__FILE__))
-    chapter_list = ['01']
+    chapter_list = ['01', 'A']
 
     chapter_list.each do |dir|
       name = "#{base_path}/../#{dir}/*.rb"
