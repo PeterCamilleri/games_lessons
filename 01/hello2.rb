@@ -1,4 +1,4 @@
-#Demo Number 2 - Spinning Hello World.
+# Spinning Hello World.
 
 require "gosu"
 
