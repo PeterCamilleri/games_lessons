@@ -16,7 +16,6 @@ class GamesLessons
         @prog_list[File.basename(full, '.rb')] = full
       end
     end
-
   end
 
   # The main entry point for the games lessons application.
