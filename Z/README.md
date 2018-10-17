@@ -17,7 +17,7 @@ Windows 95 did little to really help out the situation.
 So the question before us is simply this: **Why was it so bad?** Let's identify
 the key villains:
 
-#### The 'C' language:
+## The 'C' language:
 
 Way back in 1989, the 'C' programming language was the undisputed king of the
 programming languages. While some primitive Luddites clung to the wretched
@@ -49,7 +49,7 @@ lent itself to a structured approach. 'C' was in its element.
 Summary: Using 'C' in a GUI is akin to using scissors to mow the lawn. It can
 be made to work; It's just not a good idea.
 
-#### The 'C++' language:
+## The 'C++' language:
 
 Around the time that 'C', and the structured programming paradigm in general,
 were running out of steam, a new programming language was gaining ascendancy.
@@ -85,7 +85,7 @@ proprietary obstruction.
 Summary: For cutting the lawn, motorized scissors are not always better, and
 can be a great deal more dangerous.
 
-#### The Really Awful Hardware:
+## The Really Awful Hardware:
 
 If memory serves, in the early 90s, I was involved in a project to create a
 sophisticate GUI based application for OS/2. The language was NOT 'C'. It was
@@ -126,7 +126,7 @@ for anything but the most trivial tasks written in, yes, 'C'.
 Summary: If your lawnmower is a plastic children's toy, the scissors may be the
 only way to cut the lawn.
 
-#### The Evil Committee of Taking Over the World:
+## The Evil Committee of Taking Over the World:
 
 Look, capitalism requires that corporations seek greater profits, not the
 greater good. This includes companies that market and sell operating systems
@@ -168,7 +168,7 @@ spearheaded by systems such as Linux, and compilers like GCC. While open
 source development is not a perfect cure all, its success is such that it has
 forever changed the software landscape.
 
-#### That Optimized Code Guy:
+## That Optimized Code Guy:
 
 This point while not totally specific to the creation of graphical user
 interfaces is strongly associated with it and the low level tools we used to
