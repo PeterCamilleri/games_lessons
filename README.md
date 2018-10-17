@@ -30,10 +30,13 @@ of that chapter. This is designed to make it easy to navigate the course using
 a combination of GitHub to view the text and running the programs locally. The
 following are included.
 
+---
 * **Chapter 00** - Getting setup with Ruby and Gosu.
 * **Chapter 01** - The traditional "Hello World" with a few fun variations.
-
-* **Appendix A** - A small utility to observe the mapping of inputs to Gosu ids.
+---
+* **Appendix A** - Some small utility programs that may be of help.
+* **Appendix Z** - Some extra credits about why GUI programming was so awful.
+---
 
 More contents are under development at this time. Really!
 
