@@ -12,8 +12,8 @@ class Angles < Gosu::Window
     @limit   = 20
     @buffer = ["", "", "", ""]
 
-    @arrow = Gosu::Image.from_text("→", 200)
-    @gosu = 0
+    @arrow = Gosu::Image.from_text("→", 400)
+    @degrees = 0
   end
 
   def button_down(id)
@@ -23,20 +23,19 @@ class Angles < Gosu::Window
   def update
     if @counter == @limit
       @counter = 0
-      @gosu = (@gosu - 5) % 360
+      @degrees = (@degrees + 5) % 360
     else
       @counter += 1
     end
 
-    degrees = -@gosu % 360
-    radians = degrees.degrees_to_radians
+    @gosu   = -@degrees
+    radians = @degrees.degrees_to_radians
     pi_rads = (radians/Math::PI).rationalize(0.01)
 
-    @buffer = ["Gosu: #{@gosu}",
-               "Degrees: #{degrees}",
+    @buffer = ["Degrees: #{@degrees}",
                "Radians: #{radians}",
-               "PI Rads: #{pi_rads}"
-              ]
+               "PI Rads: #{pi_rads}",
+               "Gosu: #{@gosu}"]
 
     @legend = Gosu::Image.from_text(@buffer.join("\n"), 32)
 
