@@ -5,7 +5,7 @@ require "gosu"
 class Angles < Gosu::Window
   def initialize(width=800, height=600, fullscreen=false)
     super
-    self.caption = "Hello World - Press Esc to Exit."
+    self.caption = "Playing the Angles - Press Esc to Exit."
 
     @margin  = 20
     @counter = 0
