@@ -14,4 +14,7 @@ class GamesLessonsTest < Minitest::Test
     assert(/\A\d+\.\d+\.\d+/ =~ ::GamesLessons::VERSION)
   end
 
+  def test_that_the_needed_classes_modules_exist
+    assert(GamesLessons.is_a?(Class))
+  end
 end
