@@ -27,7 +27,8 @@ class GamesLessons
 
 end
 
+# Launch a program if this file was loaded directly. Used for testing.
 if __FILE__ == $0
-  puts "Game Lessons, Args = [#{ARGV.join(",")}]"
+  puts "Game Lessons Launcher, Args = [#{ARGV.join(",")}]"
   GamesLessons.new.main(ARGV)
 end
