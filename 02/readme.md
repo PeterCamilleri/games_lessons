@@ -1,2 +1,0 @@
-# Dimensions of Gosu
-
