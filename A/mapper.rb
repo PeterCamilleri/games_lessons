@@ -243,6 +243,9 @@ class Mapper < Gosu::Window
 
     @x = (self.width-@output.width)/2
     @y = (self.height-@output.height)/2
+
+    @mouse_x -= @mouse.width/2
+    @mouse_y -= @mouse.height/2
   end
 
   def draw
