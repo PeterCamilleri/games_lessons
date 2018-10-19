@@ -100,6 +100,21 @@ And here are some videos/blogs that sure inspired me!
 Want more? Many more interesting videos may be found on YouTube by
 searching for: [gosu ruby](https://www.youtube.com/results?search_query=gosu+ruby)
 
+## Still More Resources
+
+While all people are creative, we're not all Vincent van Gogh. I mean, who
+wants to lose an ear for art? Try this web site as a short cut to getting the
+little bits of graphic art needed to create your next game masterpiece:
+[opengameart.org](https://opengameart.org/)
+
+And what's a video game without cool, 80s sounds?
+What's that you say? You're not Mozart either?  Here for free, a whole gamut
+of sounds from simple effects to full musical scores and everything in between:
+[freesound](https://freesound.org/browse/)
+
+A all round great place to find stuff is:
+[Art Assets for Game Developers](https://superdevresources.com/free-music-sound-effects-games/)
+
 ## Time Sensitive Information
 
 Modern computer programming environments change at an alarming pace. I recall
