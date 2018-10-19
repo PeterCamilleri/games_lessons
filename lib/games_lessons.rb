@@ -8,7 +8,7 @@ class GamesLessons
   def initialize
     @prog_list = { }
     base_path = File.dirname(File.absolute_path(__FILE__))
-    chapter_list = ['01', 'A']
+    chapter_list = ['01', '02', 'A']
 
     chapter_list.each do |dir|
       name = "#{base_path}/../#{dir}/*.rb"
@@ -19,8 +19,13 @@ class GamesLessons
   end
 
   # The main entry point for the games lessons application.
-  def main(args=nil)
-    require @prog_list[args[0]]
+  def main(args=[])
+    if args.empty?
+      puts @prog_list.keys.sort.join(", ")
+    else
+      puts "Game Lessons Launcher, Args = [#{args.join(",")}]"
+      require @prog_list[args[0]]
+    end
   rescue
     puts "The program #{args[0]} was not found."
   end
@@ -29,6 +34,5 @@ end
 
 # Launch a program if this file was loaded directly. Used for testing.
 if __FILE__ == $0
-  puts "Game Lessons Launcher, Args = [#{ARGV.join(",")}]"
   GamesLessons.new.main(ARGV)
 end
