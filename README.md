@@ -1,25 +1,64 @@
-# Writing Games in Ruby with Gosu
+# Games/Lessons - Writing Games in Ruby with Gosu
 
-This package contains several simple demonstration programs for creating
-simple games and graphics in Ruby through the Gosu gem. What lessons can be
-learned from this? Well writing games is a great way to learn and improve
-programming skills while having some FUN!
+What's with the name "games_lessons"? Well the idea was to have fun with Games
+and learn some programming Lessons. I can't put the "/" into my Ruby names so
+it turns into just games_lessons. The goal here is to write some really fun
+games and be exposed to programming concepts without the need for the stress
+and anxiety of a typical school.
 
-Please note: You'll now need Ruby 2.3 or later as Gosu has dropped its
-support for versions older than that. That is as far as I know. I am not 100%
-certain on this point.
+So, this package contains several simple demonstration programs for creating
+simple games and graphics in Ruby through the Gosu gem. These will illustrate
+the aforementioned programming concepts. Taking it to the next level, they
+can be the starting point for you to modify and try out your own ideas and
+express your creativity. Eventually, you may wish to write your own programs
+from scratch, but it's nice to have working code as a starting point especially
+when you are just starting out.
 
-## Usage
+Please note: You'll now need Ruby 2.3 or later as Gosu has dropped its support
+for versions older than that. That is as far as I know. I am not 100% certain
+on this point.
+
+## Installation
 
 (Coming soon --- Oct 16, 2018)
 
     $ gem install gosu
 
-Then to run a demo you would use:
+A good test that all is well would be to run one of the sample programs. See
+the section "Running the Sample Programs" for more on that.
 
-    $ ruby 01\demo_00.rb
+## Usage
 
-Enjoy the cool "Hello World"! Press Escape to exit when the thrill wears off.
+The games_lessons gem consists of two distinct functions:
+
+1. A program launcher for the various sample programs that come with the
+tutorial.
+2. A series of classes and modules designed to take some of the boiler-plate
+and mathematics out of the programming process.
+
+WIP
+
+#### Running the Sample Programs
+
+This tutorial contains a number of demonstration and utility programs. There
+are two ways that these programs can be executed.
+
+---
+
+From the games_lessons folder, in a command line session with access to Ruby
+(please see Chapter 00 more on that) enter the following:
+
+    ruby 01\hello0.rb
+
+Naturally substituting the path and name of the program you wish to run.
+
+---
+
+Enter the following from any command line session with access to Ruby:
+
+    games_lessons hello0
+
+Naturally substituting the name of the program you wish to run. (Coming soon --- Oct 16, 2018)
 
 
 ## Contents
@@ -40,30 +79,6 @@ following are included.
 ---
 
 More contents are under development at this time. Really!
-
-## Running the Demo Programs
-
-This tutorial contains a number of demonstration and utility programs. There
-are two ways that these programs can be executed.
-
----
-
-(**1**) From the games_lessons folder, in a command line session with access to Ruby
-(please see Chapter 00 more on that) enter the following:
-
-    ruby A\mapper.rb
-
-Naturally substituting the path and name of the program you wish to run.
-
----
-
-(**2**) Enter the following from any command line session with access to Ruby:
-
-    games_lessons mapper
-
-Naturally substituting the name of the program you wish to run. (Coming soon --- Oct 16, 2018)
-
----
 
 ## More Resources
 
