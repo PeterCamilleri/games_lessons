@@ -7,8 +7,9 @@ class Mapper < Gosu::Window
   def initialize(width=800, height=600, fullscreen=false)
     super
     self.caption = "A Gosu Input Mapper. Press Escape 3 times to exit."
-    @buffer = ["Press a key", ""]
+    @buffer = ["Press a key", "", ""]
     @count  = 0
+    @mouse  = Gosu::Image.from_text("X", 40)
 
     @mapper = { Gosu::KB_0              =>"Gosu::KB_0",
                 Gosu::KB_1              =>"Gosu::KB_1",
@@ -237,14 +238,16 @@ class Mapper < Gosu::Window
   end
 
   def update
-    @title = Gosu::Image.from_text(@buffer.join("\n"), 40)
+    @buffer[2] = "Mouse X:#{@mouse_x = mouse_x}, Y:#{@mouse_y = mouse_y}"
+    @output = Gosu::Image.from_text(@buffer.join("\n"), 40)
 
-    @x = (self.width-@title.width)/2
-    @y = (self.height-@title.height)/2
+    @x = (self.width-@output.width)/2
+    @y = (self.height-@output.height)/2
   end
 
   def draw
-    @title.draw(@x, @y, 0)
+    @output.draw(@x, @y, 0)
+    @mouse.draw(@mouse_x, @mouse_y, 0)
   end
 end
 
