@@ -140,7 +140,7 @@ that has a melt-down when presented with line-ending it does not like. Notepad
 likes to have such melt-downs.
 
 Unless you have a strong preference, I would recommend the free Notepad++
-program. It can be found at: [Notepad++](https://notepad-plus-plus.org/)
+program. It can be found at: [Notepad++](https://notepad-plus-plus.org/).
 In addition to smart line-ending handling, you also get syntax highlighting,
 multi-tab editing, and a whole host of features useful in editing program
 source code. I always install with the default settings, but change them if
