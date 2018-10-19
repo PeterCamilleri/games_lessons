@@ -106,6 +106,8 @@ for Ruby work. You will still want to use the
 
 ## Step 3 Install the Gosu gem.
 
+WIP - This is not yet ready as of Oct 19, 2018.
+
 After the scary business of getting the right version of Ruby installed, this
 step is an easy one:
 
@@ -119,17 +121,27 @@ This step can be accomplished by downloading the games_lessons repository zip
 file and expanding it into a folder easily reached by a Ruby enabled command
 line session.
 
-WIP
-
 With any luck, you can now enter:
 
-    ruby 00/demo_00.rb
-
-or in Windows
-
-    ruby 00\demo_00.rb
+    games_lessons hello0
 
 and see the first of the "Hello World" demo programs.
 
 We will return to this first demo, but for now, you are ready for Chapter 1.
-s
+
+## Step 5 - Install an editor.
+
+Now I know that Windows comes with the notepad editor, but I can say without
+hesitation that it is utterly inadequate to the task. The Ruby language is
+a cross platform programming tool that to be honest, favors Linux. Files and in
+particular program source files will be encoded with both Unix/Linux/Mac style
+and CPM/DOS/Windows style line endings. The last thing you want is an editor
+that has a melt-down when presented with line-ending it does not like. Notepad
+likes to have such melt-downs.
+
+Unless you have a strong preference, I would recommend the free Notepad++
+program. It can be found at: [Notepad++](https://notepad-plus-plus.org/)
+In addition to smart line-ending handling, you also get syntax highlighting,
+multi-tab editing, and a whole host of features useful in editing program
+source code. I always install with the default settings, but change them if
+you like.
