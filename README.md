@@ -70,11 +70,15 @@ a combination of GitHub to view the text and running the programs locally. The
 following are included.
 
 ---
+**The Course Material**:
 * **Chapter 00** - Getting setup with Ruby and Gosu.
 * **Chapter 01** - The traditional "Hello World" with a few fun variations.
 * **Chapter 02** - Dimensions of Gosu (or what's "up" Doc?)
 ---
+**Helpful Extras**:
 * **Appendix A** - Some small utility programs that may be of help.
+---
+**Soap Box and Rants**:
 * **Appendix Z** - Some extra credits about why GUI programming was so awful.
 ---
 

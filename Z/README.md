@@ -1,4 +1,4 @@
-# Appendix Z - Extra Credits
+# Appendix Z - Extra Credits - Why was it so BAD?
 
 This section is only of interest to historian types and those who'd rather not
 be doomed to repeating the mistakes of the past. Otherwise, this section can be
