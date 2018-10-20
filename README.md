@@ -75,7 +75,7 @@ following are included.
 * **Chapter 01** - The traditional "Hello World" with a few fun variations.
 * **Chapter 02** - Dimensions of Gosu (or what's "up" Doc?)
 ---
-**Helpful Extras**:
+**Some Helpful Extras**:
 * **Appendix A** - Some small utility programs that may be of help.
 ---
 **Soap Box and Rants**:
