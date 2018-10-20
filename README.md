@@ -110,7 +110,7 @@ little bits of graphic art needed to create your next game masterpiece:
 And what's a video game without cool, 80s sounds?
 What's that you say? You're not Mozart either?  Here for free, a whole gamut
 of sounds from simple effects to full musical scores and everything in between:
-[freesound](https://freesound.org/browse/)
+[freesound](https://freesound.org/browse/) (Free but registration required).
 
 A all round great place to find stuff is:
 [Art Assets for Game Developers](https://superdevresources.com/free-music-sound-effects-games/)
