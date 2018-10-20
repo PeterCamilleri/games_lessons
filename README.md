@@ -115,6 +115,13 @@ of sounds from simple effects to full musical scores and everything in between:
 A all round great place to find stuff is:
 [Art Assets for Game Developers](https://superdevresources.com/free-music-sound-effects-games/)
 
+Also it may come to pass that the free art you find is close to your needs but
+not quite right. If so you may need some tools to tweak or edit things to the
+way you need. Here are two free tools that I use to get this done:
+* [GIMP](https://www.gimp.org/) for images.
+* [Audacity](https://www.audacityteam.org/) for sounds.
+
+
 ## Time Sensitive Information
 
 Modern computer programming environments change at an alarming pace. I recall
