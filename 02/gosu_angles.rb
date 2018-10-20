@@ -5,14 +5,14 @@ require "gosu"
 class Angles < Gosu::Window
   def initialize(width=800, height=600, fullscreen=false)
     super
-    self.caption = "Playing the Angles - Press Esc to Exit."
+    self.caption = "Angles - Press Esc to Exit."
 
     @margin  = 20
     @counter = 0
     @limit   = 20
     @buffer = ["", "", "", ""]
 
-    @arrow = Gosu::Image.from_text("→", 400)
+    @arrow = Gosu::Image.from_text("↑", 400)
     @degrees = 0
   end
 
@@ -28,7 +28,7 @@ class Angles < Gosu::Window
       @counter += 1
     end
 
-    @gosu   = -@degrees
+    @gosu   = -@degrees + 90
     radians = @degrees.degrees_to_radians
     pi_rads = (radians/Math::PI).rationalize(0.01)
 
