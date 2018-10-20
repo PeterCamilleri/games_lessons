@@ -6,10 +6,13 @@ class Mapper < Gosu::Window
 
   def initialize(width=800, height=600, fullscreen=false)
     super
+
+    path = File.dirname(File.absolute_path(__FILE__)) + "/"
+
     self.caption = "A Gosu Input Mapper. Press Escape 3 times to exit."
     @buffer = ["Press a key", "", ""]
     @count  = 0
-    @mouse  = Gosu::Image.from_text("X", 40)
+    @mouse  = Gosu::Image.new(path + "Arrow_Top_Left.png")
 
     @mapper = { Gosu::KB_0              =>"Gosu::KB_0",
                 Gosu::KB_1              =>"Gosu::KB_1",
@@ -238,14 +241,11 @@ class Mapper < Gosu::Window
   end
 
   def update
-    @buffer[2] = "Mouse X:#{@mouse_x = mouse_x}, Y:#{@mouse_y = mouse_y}"
+    @buffer[2] = "Mouse X:#{@mouse_x = mouse_x.to_i}, Y:#{@mouse_y = mouse_y.to_i}"
     @output = Gosu::Image.from_text(@buffer.join("\n"), 40)
 
     @x = (self.width-@output.width)/2
     @y = (self.height-@output.height)/2
-
-    @mouse_x -= @mouse.width/2
-    @mouse_y -= @mouse.height/2
   end
 
   def draw

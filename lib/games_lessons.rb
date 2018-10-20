@@ -26,8 +26,8 @@ class GamesLessons
       puts "Game Lessons Launcher, Args = [#{args.join(",")}]"
       require @prog_list[args[0]]
     end
-  rescue
-    puts "The program #{args[0]} was not found."
+ # rescue
+  #  puts "The program #{args[0]} was not found."
   end
 
 end
