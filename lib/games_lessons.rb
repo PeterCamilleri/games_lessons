@@ -1,4 +1,5 @@
 
+require_relative 'games_lessons/exceptions'
 require_relative 'games_lessons/version'
 
 # The master control class for the games lessons.
@@ -6,7 +7,7 @@ class GamesLessons
 
   # Set up the games lessons data.
   def initialize
-    @prog_list = { }
+    @prog_list = Hash.new {|_h, _k| fail GamesLessonNotFoundError }
     base_path = File.dirname(File.absolute_path(__FILE__))
     chapter_list = ['01', '02', 'A']
 
@@ -26,8 +27,8 @@ class GamesLessons
       puts "Game Lessons Launcher, Args = [#{args.join(",")}]"
       require @prog_list[args[0]]
     end
- # rescue
-  #  puts "The program #{args[0]} was not found."
+  rescue GamesLessonNotFoundError
+    puts "The program #{args[0]} was not found."
   end
 
 end
