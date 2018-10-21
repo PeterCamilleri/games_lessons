@@ -12,7 +12,7 @@ class Mapper < Gosu::Window
     self.caption = "A Gosu Input Mapper. Press Escape 3 times to exit."
     @buffer = ["Press a key", "", ""]
     @count  = 0
-    @mouse  = Gosu::Image.new(path + "Arrow_Top_Left.png")
+    @mouse  = Gosu::Image.new(path + "images/Arrow_Top_Left.png")
 
     @mapper = { Gosu::KB_0              =>"Gosu::KB_0",
                 Gosu::KB_1              =>"Gosu::KB_1",
