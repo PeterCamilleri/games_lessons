@@ -73,12 +73,12 @@ following are included.
 **The Course Material**:
 * **Chapter 00** - Getting setup with Ruby and Gosu.
 * **Chapter 01** - The traditional "Hello World" with a few fun variations.
-* **Chapter 02** - Dimensions of Gosu (or what's "up" Doc?)
 ---
 **Some Helpful Extras**:
 * **Appendix A** - Some small utility programs that may be of help.
 ---
 **Soap Box and Rants**:
+* **Appendix Y** - Dimensions of Gosu (or what's "up" Doc?)
 * **Appendix Z** - Some extra credits about why GUI programming was so awful.
 ---
 
