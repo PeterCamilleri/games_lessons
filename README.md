@@ -73,6 +73,7 @@ following are included.
 **The Course Material**:
 * **Chapter 00** - Getting setup with Ruby and Gosu.
 * **Chapter 01** - The traditional "Hello World" with a few fun variations.
+* **Chapter 02** - Getting the ball rolling.
 ---
 **Some Helpful Extras**:
 * **Appendix A** - Some small utility programs that may be of help.
