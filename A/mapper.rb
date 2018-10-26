@@ -16,6 +16,7 @@ class Mapper < Gosu::Window
     self.caption = "A Gosu Input Mapper. Press Escape 3 times to exit."
     @buffer = ["Press a key", "", "", ""]
     @count  = 0
+    @t1 = Gosu.milliseconds
 
     @mapper = { Gosu::KB_0              =>"Gosu::KB_0",
                 Gosu::KB_1              =>"Gosu::KB_1",
@@ -248,7 +249,12 @@ class Mapper < Gosu::Window
   end
 
   def update
-    @buffer[2] = "Frames/Second = #{'%5.1f' % (1000/update_interval)}"
+    @t2, @t1 = @t1, Gosu.milliseconds
+
+    ideal_fps = (1000/update_interval).to_i
+    real_fps  = 1000/(@t1-@t2)
+
+    @buffer[2] = "Frames/Second = #{ideal_fps} vs #{real_fps}"
     @buffer[3] = "Mouse X:#{@mouse_x = mouse_x.to_i}, Y:#{@mouse_y = mouse_y.to_i}"
 
     @output = Gosu::Image.from_text(@buffer.join("\n"), 40)
