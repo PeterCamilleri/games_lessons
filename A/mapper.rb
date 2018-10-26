@@ -7,12 +7,15 @@ class Mapper < Gosu::Window
   def initialize(width=800, height=600, fullscreen=false)
     super
 
+    # Extract the full path to this file, excluding the file part.
     path = File.dirname(File.absolute_path(__FILE__)) + "/"
+
+    # Load up the image of the Gosu mouse pointer.
+    @mouse  = Gosu::Image.new(path + "images/Arrow_Top_Left.png")
 
     self.caption = "A Gosu Input Mapper. Press Escape 3 times to exit."
     @buffer = ["Press a key", "", "", ""]
     @count  = 0
-    @mouse  = Gosu::Image.new(path + "images/Arrow_Top_Left.png")
 
     @mapper = { Gosu::KB_0              =>"Gosu::KB_0",
                 Gosu::KB_1              =>"Gosu::KB_1",
