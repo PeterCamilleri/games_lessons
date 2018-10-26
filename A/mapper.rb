@@ -11,10 +11,15 @@ class Mapper < Gosu::Window
     path = File.dirname(File.absolute_path(__FILE__)) + "/"
 
     # Load up the image of the Gosu mouse pointer.
-    @mouse  = Gosu::Image.new(path + "images/Arrow_Top_Left.png")
+    @arrow  = Gosu::Image.new(path + "images/Arrow_Top_Left.png")
 
     self.caption = "A Gosu Input Mapper. Press Escape 3 times to exit."
-    @buffer = ["Press a key", "", "", ""]
+
+    @btn_down = Gosu::Image.from_text("", 40)
+    @btn_up   = Gosu::Image.from_text("", 40)
+    @mouse    = Gosu::Image.from_text("", 40)
+    @old = ""
+
     @count  = 0
     @t1 = Gosu.milliseconds
 
@@ -235,7 +240,8 @@ class Mapper < Gosu::Window
   end
 
   def button_down(id)
-    @buffer[0] = "button_down: #{id.inspect} #{@mapper[id]}"
+    text = "button_down: #{id.inspect} #{@mapper[id]}"
+    @btn_down = Gosu::Image.from_text(text, 40)
 
     if id == Gosu::KB_ESCAPE
       close if (@count += 1) == 3
@@ -245,27 +251,44 @@ class Mapper < Gosu::Window
   end
 
   def button_up(id)
-    @buffer[1] = "button_up: #{id.inspect}  #{@mapper[id]}"
+    text = "button_up: #{id.inspect}  #{@mapper[id]}"
+    @btn_up   = Gosu::Image.from_text(text, 40)
   end
 
   def update
+    text = "Mouse X:#{@mouse_x = mouse_x.to_i}, Y:#{@mouse_y = mouse_y.to_i}"
+
+    if @old != text
+      @mouse = Gosu::Image.from_text(text, 40)
+      @old = text
+    end
+
     @t2, @t1 = @t1, Gosu.milliseconds
 
     ideal_fps = (1000/update_interval).to_i
     real_fps  = 1000/(@t1-@t2)
 
-    @buffer[2] = "Frames/Second = #{ideal_fps} vs #{real_fps}"
-    @buffer[3] = "Mouse X:#{@mouse_x = mouse_x.to_i}, Y:#{@mouse_y = mouse_y.to_i}"
+    text = "Frames/Second = #{ideal_fps} vs #{real_fps}"
+    @fps = Gosu::Image.from_text(text, 40)
 
-    @output = Gosu::Image.from_text(@buffer.join("\n"), 40)
-
-    @x = (self.width-@output.width)/2
-    @y = (self.height-@output.height)/2
   end
 
   def draw
-    @output.draw(@x, @y, 0)
-    @mouse.draw(@mouse_x, @mouse_y, 0)
+    x = 20
+    y = 20
+
+    @btn_down.draw(x, y, 0)
+
+    y += @btn_down.height
+    @btn_up.draw(x, y, 0)
+
+    y += @btn_up.height
+    @mouse.draw(x, y, 0)
+
+    y += @mouse.height
+    @fps.draw(x, y, 0)
+
+    #@arrow.draw(@mouse_x, @mouse_y, 0)
   end
 end
 
