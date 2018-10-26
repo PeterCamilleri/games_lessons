@@ -12,4 +12,5 @@ principles in the face of severe adversity and opposition isn't bad either but
 is off topic.
 
 Were going to use the ball to get our game past the still life phase and into
-some sort of movement.
+some sort of movement and eventually our first interactive manipulation of
+objects in our nascent game.
