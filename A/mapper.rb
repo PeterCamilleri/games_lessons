@@ -226,6 +226,10 @@ class Mapper < Gosu::Window
                 Gosu::GP_3_UP             => "Gosu::GP_3_UP"}
   end
 
+  def needs_cursor?
+    true
+  end
+
   def button_down(id)
     @buffer[0] = "button_down: #{id.inspect} #{@mapper[id]}"
 
