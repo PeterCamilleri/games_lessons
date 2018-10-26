@@ -16,10 +16,6 @@ class Ball < Gosu::Window
     self.caption = "A Ball. Press Escape to exit."
   end
 
-  def needs_cursor?
-    true
-  end
-
   def button_down(id)
     close if id == Gosu::KB_ESCAPE
   end
