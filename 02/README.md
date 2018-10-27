@@ -61,3 +61,55 @@ computes the full path to the folder containing the ball0.rb (\_\_FILE\_\_).
 This allows us to access resources relative to that folder without having to
 worry about where the current working directory is or other things that can
 make our code more brittle than it needs to be.
+
+The other area to be examined is that, for this simple program, we want the
+bottom of the ball image to line up exactly with the bottom of our window.
+Let's take a look at a diagram of the measurements that come into play here:
+
+![ball bounds](./images/bounded_ball.png)
+
+Now, some of these values are given. The origin of the ball image is a point
+with an x and a y component. These are set when the image is drawn on the
+screen. The height and width are properties of the image itself (these can be
+obtained with the height and width methods). Now the other properties are
+derived from the given data. While we are interested the bottom of the ball,
+let's look at all four boundaries:
+
+```ruby
+ball_left   = ball.x
+ball_right  = ball.x + ball.width
+ball_top    = ball.y
+ball_bottom = ball.y + ball.height
+```
+
+Now our goal is to have window_bottom == ball_bottom. The rules for the ball
+also apply to the window. However, the origin is always 0,0 for the window so
+we get:
+
+```ruby
+window_left   = 0
+window_right  = 0 + window.width = window.width
+window_top    = 0
+window_bottom = 0 + window.height = window.height
+```
+
+So:
+
+```ruby
+ball_bottom = window_bottom
+```
+
+Substituting what we know from above:
+
+```ruby
+ball.y + ball.height = window.height
+```
+
+We want to know the ball's y value so we subtract ball.height from both sides:
+
+```ruby
+ball.y = window.height - ball.height
+```
+
+This simple math lets us control where the bottom of the ball is when all we
+can set is the location of the top of the ball.
