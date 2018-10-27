@@ -19,3 +19,20 @@ Above all, a world filled with things!
 
 Sometime even things that are affected by gravity, thrust, drag, inertia and
 collisions with asteroids and photon torpedoes.
+
+All of the concepts mentioned are described using a language uniquely suited to
+this task:
+
+**Mathematics!**
+
+**Please Wait!**
+
+**Don't Run!**
+
+**It's not that bad!**
+
+Remember, we have computers to do the grunt work of crunching the numbers. The
+name computer even means a thing that computes; You know, like mathematics and
+arithmetic. We just have to tell the machine what numbers need to be crunched,
+how, and in what order. And telling computers what to do is what programming is
+all about. It is also what we must tackle in this section.
