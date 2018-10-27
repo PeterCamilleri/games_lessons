@@ -46,6 +46,10 @@ def initialize(width=800, height=600, fullscreen=false)
   @ball = Gosu::Image.new(path + "images/green-ball_75x75.png")
 
   self.caption = "A Ball. Press Escape to exit."
+
+  # Place the ball, on the ground.
+  @x = (self.width-@ball.width)/2
+  @y = self.height-@ball.height
 end
 ```
 
@@ -122,9 +126,11 @@ in our window.
 The code in question boils down to just these few lines:
 
 ```ruby
-def update
   # Place the ball, on the ground.
   @x = (self.width-@ball.width)/2
   @y = self.height-@ball.height
-end
 ```
+
+You may note that this code is in the initialize method and not update. This is
+because the position of the ball never changes in this program. In later
+versions this will be the initial position of the ball.

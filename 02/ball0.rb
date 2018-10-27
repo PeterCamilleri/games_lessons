@@ -14,16 +14,14 @@ class Ball < Gosu::Window
     @ball = Gosu::Image.new(path + "images/green-ball_75x75.png")
 
     self.caption = "A Ball. Press Escape to exit."
+
+    # Place the ball, on the ground.
+    @x = (self.width-@ball.width)/2
+    @y = self.height-@ball.height
   end
 
   def button_down(id)
     close if id == Gosu::KB_ESCAPE
-  end
-
-  def update
-    # Place the ball, on the ground.
-    @x = (self.width-@ball.width)/2
-    @y = self.height-@ball.height
   end
 
   def draw
