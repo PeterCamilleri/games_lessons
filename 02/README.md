@@ -81,6 +81,9 @@ ball_right  = ball.x + ball.width
 ball_top    = ball.y
 ball_bottom = ball.y + ball.height
 ```
+Note: It may seem strange but the bottom of the ball value is greater than the
+top of the ball value . We will deal more with this later, but for now just
+accept that in Gosu, things are a bit upside-down.
 
 Now our goal is to have window_bottom == ball_bottom. The rules for the ball
 also apply to the window. However, the origin is always 0,0 for the window so
