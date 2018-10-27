@@ -115,4 +115,16 @@ ball.y = window.height - ball.height
 ```
 
 This simple math lets us control where the bottom of the ball is when all we
-can set is the location of the top of the ball.
+can set is the location of the top of the ball. The same math applies for the
+x position of the ball, except in this case, we want the ball to be centered
+in our window.
+
+The code in question boils down to just these few lines:
+
+```ruby
+def update
+  # Place the ball, on the ground.
+  @x = (self.width-@ball.width)/2
+  @y = self.height-@ball.height
+end
+```
