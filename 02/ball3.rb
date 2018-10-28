@@ -1,4 +1,4 @@
-# Ball0 - Do you realize the gravity of the situation?
+# Ball0 - Oh wow, that's such a drag!
 
 require "gosu"
 
@@ -24,6 +24,8 @@ class Ball < Gosu::Window
     @vy = -1
 
     @gravity = 0.024 # Pixels per millisecond squared.
+
+    @drag = 1 - 0.001 # The drag factor.
   end
 
   def button_down(id)
@@ -37,6 +39,10 @@ class Ball < Gosu::Window
     @old ||= @new
     delta = @new - @old
     @old  = @new
+
+    # Compute the drag
+    @vx *= @drag
+    @vy *= @drag
 
     #Update for gravity.
     @vy += @gravity
@@ -66,7 +72,7 @@ class Ball < Gosu::Window
       @y = -top
     elsif bottom > self.height
       @vy *= -1
-      @y -= 2 * (bottom-self.height)
+      @y -= 2 * (bottom-self.height).to_i
     end
   end
 
