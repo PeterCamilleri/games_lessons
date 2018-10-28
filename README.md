@@ -77,6 +77,7 @@ following are included.
 ---
 **Some Helpful Extras**:
 * **Appendix A** - Some small utility programs that may be of help.
+* **Appendix B** - Some Words of (Hopefully) Wisdom.
 ---
 **Soap Box and Rants**:
 * **Appendix Y** - Dimensions of Gosu (or what's "up" Doc?)
