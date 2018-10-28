@@ -3,7 +3,7 @@
 Now I begin this section with the conceit that I have any words of wisdom to
 convey to the reader. It is true that I have been programming for a very long
 time, but length of service does not always lead to excellence. I can only
-say the truths that I know and hope that they will be of some use.
+say these are truths that I know and hope that they will be of some use.
 
 The games lessons tutorial is different from most published works in that it
 was designed from the outset to be hosted on github. Why? and why care? With
