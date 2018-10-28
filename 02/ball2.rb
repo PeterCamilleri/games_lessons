@@ -23,7 +23,7 @@ class Ball < Gosu::Window
     @vx = 1
     @vy = -1
 
-    @gravity = -0.024 # Pixels per millisecond squared.
+    @gravity = 0.024 # Pixels per millisecond squared.
   end
 
   def button_down(id)
@@ -39,7 +39,7 @@ class Ball < Gosu::Window
     @old  = @new
 
     #Upade for gravity.
-    @vy -= @gravity
+    @vy += @gravity
 
     # Compute the new proposed position.
     @x += @vx * delta
