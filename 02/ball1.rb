@@ -15,11 +15,11 @@ class Ball < Gosu::Window
 
     self.caption = "A Ball. Press Escape to exit."
 
-    # Place the ball, on the ground.
+    # Place the ball, on the ground. This is the initial position.
     @x = (self.width-@ball.width)/2
     @y = self.height-@ball.height
 
-    # Set up the initial velocity vector. (Pixels per millisecond.)
+    # Set up the initial velocity. (In pixels per millisecond.)
     @vx = 1
     @vy = -1
   end
@@ -33,7 +33,8 @@ class Ball < Gosu::Window
     # Compute the passage of time.
     @new = Gosu.milliseconds
     @old ||= @new
-    delta, @old = @new - @old, @new
+    delta = @new - @old
+    @old  = @new
 
     # Compute the new proposed position.
     @x += @vx * delta
@@ -45,26 +46,20 @@ class Ball < Gosu::Window
     left = @x
     right = @x + @ball.width
 
-    # Check for collision with the left wall.
+    # Check for collision with the left and right walls.
     if left < 0
       @vx *= -1
       @x = -left
-    end
-
-    # Check for collision with the right wall.
-    if right > self.width
+    elsif right > self.width
       @vx *= -1
       @x -= 2 * (right-self.width)
     end
 
-    # Check for collision with the top wall.
+    # Check for collision with the top and bottom walls.
     if top < 0
       @vy *= -1
       @y = -top
-    end
-
-    # Check for collision with the bottom wall.
-    if bottom > self.height
+    elsif bottom > self.height
       @vy *= -1
       @y -= 2 * (bottom-self.height)
     end
