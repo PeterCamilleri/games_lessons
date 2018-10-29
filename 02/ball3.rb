@@ -45,7 +45,11 @@ class Ball < Gosu::Window
     @vy *= @drag
 
     #Update for gravity.
-    @vy += @gravity
+    bottom = @y + @ball.height
+
+    if (bottom + @vx) < self.height
+      @vy += @gravity
+    end
 
     # Compute the new proposed position.
     @x += @vx * delta
@@ -72,7 +76,7 @@ class Ball < Gosu::Window
       @y = -top
     elsif bottom > self.height
       @vy *= -1
-      @y -= 2 * (bottom-self.height).to_i
+      @y = self.height - @ball.height
     end
   end
 
