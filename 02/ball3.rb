@@ -47,7 +47,7 @@ class Ball < Gosu::Window
     #Update for gravity.
     bottom = @y + @ball.height
 
-    if (bottom + @vx) < self.height
+    if (bottom + @vx) < (self.height + 1)
       @vy += @gravity
     end
 
