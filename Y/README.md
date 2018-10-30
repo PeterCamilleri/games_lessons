@@ -36,3 +36,10 @@ name computer even means a thing that computes; You know, like mathematics and
 arithmetic. We just have to tell the machine what numbers need to be crunched,
 how, and in what order. And telling computers what to do is what programming is
 all about. It is also what we must tackle in this section.
+
+Now, Gosu is a (mostly) two dimensional (2D) gaming framework. It is suitable
+for creating the sort of fun games common on retro-gaming platforms of the
+ancient past. Let's start by looking at the coordinates of the windows used in
+the samples of this tutorial:
+
+![gosu](./images/dimensions.png)
