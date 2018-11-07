@@ -1,4 +1,4 @@
-# Ball0 - Do you realize the gravity of the situation?
+# Ball2 - Do you realize the gravity of the situation?
 
 require "gosu"
 

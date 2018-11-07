@@ -1,4 +1,4 @@
-# Ball0 - Oh wow, that's such a drag!
+# Ball3 - Oh wow, that's such a drag!
 
 require "gosu"
 

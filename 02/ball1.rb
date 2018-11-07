@@ -1,4 +1,4 @@
-# Ball0 - The ball is... moving!
+# Ball1 - The ball is... moving!
 
 require "gosu"
 
