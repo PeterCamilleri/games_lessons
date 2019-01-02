@@ -40,12 +40,12 @@ class Ball < Gosu::Window
     delta = @new - @old
     @old  = @new
 
+    #Update for gravity.
+    @vy += @gravity
+
     # Compute the drag
     @vx *= @drag
     @vy *= @drag
-
-    #Update for gravity.
-    @vy += @gravity
 
     # Compute the new proposed position.
     @x += @vx * delta
