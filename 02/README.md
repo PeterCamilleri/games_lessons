@@ -135,6 +135,8 @@ You may note that this code is in the initialize method and not update. This is
 because the position of the ball never changes in this program. In later
 versions this will be the initial position of the ball.
 
+## Ball 1
+
 OK, now enough with the Zen still life, time to get things moving.
 
     ruby 01\ball1.rb
