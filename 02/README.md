@@ -134,3 +134,85 @@ The code in question boils down to just these few lines:
 You may note that this code is in the initialize method and not update. This is
 because the position of the ball never changes in this program. In later
 versions this will be the initial position of the ball.
+
+OK, now enough with the Zen still life, time to get things moving.
+
+    ruby 01\ball1.rb
+    or
+    games_lessons ball1
+
+and you will get:
+
+![ball1](./images/ball1_image.png)
+
+Well yes, now you are missing something with this still image. No motion. Run
+the demo to see the ball most certainly moving about and bouncing off the
+walls. So what has changed to make this motion possible? Two methods are
+changed: initialize and update.
+
+The initialize method now sets up the initial position and velocity of the ball.
+
+```ruby
+# Set up the initial velocity. (In pixels per millisecond.)
+@vx = 1
+@vy = -1
+```
+
+Now velocities are express in terms of units of distance per unit of time. In
+this case that is pixels per millisecond.
+
+The update method has three responsibilities.
+
+_First:_ It must determine how much time has elapsed since the last frame. This
+is how this is done:
+
+```ruby
+# Compute the passage of time.
+@new = Gosu.milliseconds
+@old ||= @new
+delta = @new - @old
+@old  = @new
+```
+
+The value delta is the count of elapsed milliseconds. The very first frame is a
+special case in that having no previous frame, no time has elapsed.
+
+_Second:_ It updates the position of the ball based on the velocity. Here it is:
+
+```ruby
+# Compute the new proposed position.
+@x += @vx * delta
+@y += @vy * delta
+```
+
+Notice that it is called a "proposed" position. This is because the ball's
+motion occurs in a finite space. Very soon, the ball runs out of room and hits
+a boundary. This is where the third part comes in.
+
+_Third:_ It checks for bouncing off of the walls. This is the most elaborate
+chunk of code:
+
+```ruby
+# Check for collision with the left and right walls.
+if left < 0
+  @vx *= -1
+  @x = -left
+elsif right > self.width
+  @vx *= -1
+  @x -= 2 * (right-self.width)
+end
+
+# Check for collision with the top and bottom walls.
+if top < 0
+  @vy *= -1
+  @y = -top
+elsif bottom > self.height
+  @vy *= -1
+  @y -= 2 * (bottom-self.height)
+end
+```
+
+And that's it for new code. The draw method stills draws our ball at its
+current location. It's just that this location is constantly being updated by
+the update method. Our screen shows our ball zipping around and bouncing off
+the walls!
