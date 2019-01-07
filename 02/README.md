@@ -161,7 +161,7 @@ The initialize method now sets up the initial position and velocity of the ball.
 Now velocities are express in terms of units of distance per unit of time. In
 this case that is pixels per millisecond.
 
-The update method has three responsibilities.
+The update method has four responsibilities.
 
 _First:_ It must determine how much time has elapsed since the last frame. This
 is how this is done:
@@ -189,7 +189,22 @@ Notice that it is called a "proposed" position. This is because the ball's
 motion occurs in a finite space. Very soon, the ball runs out of room and hits
 a boundary. This is where the third part comes in.
 
-_Third:_ It checks for bouncing off of the walls. This is the most elaborate
+_Third:_  The method computes the hit or contact box of the ball. These are the
+top, bottom, left, and right boundaries of the ball.
+
+```ruby
+# Compute the boundary limits.
+top = @y
+bottom = @y + @ball.height
+left = @x
+right = @x + @ball.width
+```
+
+Notice that the top and the left are simple copies of the appropriate position.
+This is done for clarity.
+
+_Fourth:_ It checks for bouncing off of the walls. That is, the hit box crossing
+one of the four walls at the boundary of the screen. This is the most elaborate
 chunk of code:
 
 ```ruby
@@ -212,7 +227,14 @@ elsif bottom > self.height
 end
 ```
 
+The bouncing code simply determines how far into the wall that ball "wanted" to
+go and positions it that far moving away from the wall. This works well since
+the ball is not affected by and forces that would cause acceleration.
+
 And that's it for new code. The draw method stills draws our ball at its
 current location. It's just that this location is constantly being updated by
 the update method. Our screen shows our ball zipping around and bouncing off
 the walls!
+
+In fact, for most video games, this is it! That is, most games do not go any
+further in modeling the motions of objects.
