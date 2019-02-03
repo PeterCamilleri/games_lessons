@@ -240,3 +240,26 @@ the walls!
 
 In fact, for most video games, this is it! That is, most games do not go any
 further in modeling the motions of objects.
+
+## Ball 2 and Ball 3
+
+We're not going to look at the next two demos very closely. Ball 2 adds the
+force of gravity, and Ball 3 further adds the force of drag or friction.
+
+Why not look at these further?
+
+Simply, we are interested in creating video games, not physics simulations.
+These programs attempt to create an authentic simulation of the motion of our
+ball. One problem. they don't work very well. The problem is that while in
+reality time flows fairly smoothly (no black holes please). In our programs it
+comes in discrete chunks. This can result in truncation errors when the ball
+hits a wall or the floor.
+
+Still, feel free to look at the code for extra credits and I would be
+interested in any ideas, suggestions, or improvements that may occur to you.
+
+So what is next? Let's control our ball from the keyboard like we would in a
+simple platform video game.
+
+To do that, we will need to get a firmer grasp of input. That is the topic for
+chapter 3.
